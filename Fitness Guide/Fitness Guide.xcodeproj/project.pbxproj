@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		317330E11C5FCF2D00BB2148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E01C5FCF2D00BB2148 /* main.m */; };
+		317330E41C5FCF2D00BB2148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E31C5FCF2D00BB2148 /* AppDelegate.m */; };
+		317330E71C5FCF2D00BB2148 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E61C5FCF2D00BB2148 /* FirstViewController.m */; };
+		317330EA1C5FCF2D00BB2148 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E91C5FCF2D00BB2148 /* SecondViewController.m */; };
+		317330ED1C5FCF2D00BB2148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317330EB1C5FCF2D00BB2148 /* Main.storyboard */; };
+		317330EF1C5FCF2D00BB2148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317330EE1C5FCF2D00BB2148 /* Assets.xcassets */; };
+		317330F21C5FCF2D00BB2148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317330F01C5FCF2D00BB2148 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		317330DC1C5FCF2D00BB2148 /* Fitness Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		317330E01C5FCF2D00BB2148 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		317330E21C5FCF2D00BB2148 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		317330E31C5FCF2D00BB2148 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		317330E51C5FCF2D00BB2148 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		317330E61C5FCF2D00BB2148 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		317330E81C5FCF2D00BB2148 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		317330E91C5FCF2D00BB2148 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		317330EC1C5FCF2D00BB2148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		317330EE1C5FCF2D00BB2148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		317330F11C5FCF2D00BB2148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		317330F31C5FCF2D00BB2148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		317330D91C5FCF2D00BB2148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		317330D31C5FCF2D00BB2148 = {
+			isa = PBXGroup;
+			children = (
+				317330DE1C5FCF2D00BB2148 /* Fitness Guide */,
+				317330DD1C5FCF2D00BB2148 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		317330DD1C5FCF2D00BB2148 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				317330DC1C5FCF2D00BB2148 /* Fitness Guide.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		317330DE1C5FCF2D00BB2148 /* Fitness Guide */ = {
+			isa = PBXGroup;
+			children = (
+				317330E21C5FCF2D00BB2148 /* AppDelegate.h */,
+				317330E31C5FCF2D00BB2148 /* AppDelegate.m */,
+				317330E51C5FCF2D00BB2148 /* FirstViewController.h */,
+				317330E61C5FCF2D00BB2148 /* FirstViewController.m */,
+				317330E81C5FCF2D00BB2148 /* SecondViewController.h */,
+				317330E91C5FCF2D00BB2148 /* SecondViewController.m */,
+				317330EB1C5FCF2D00BB2148 /* Main.storyboard */,
+				317330EE1C5FCF2D00BB2148 /* Assets.xcassets */,
+				317330F01C5FCF2D00BB2148 /* LaunchScreen.storyboard */,
+				317330F31C5FCF2D00BB2148 /* Info.plist */,
+				317330DF1C5FCF2D00BB2148 /* Supporting Files */,
+			);
+			path = "Fitness Guide";
+			sourceTree = "<group>";
+		};
+		317330DF1C5FCF2D00BB2148 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				317330E01C5FCF2D00BB2148 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		317330DB1C5FCF2D00BB2148 /* Fitness Guide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317330F61C5FCF2D00BB2148 /* Build configuration list for PBXNativeTarget "Fitness Guide" */;
+			buildPhases = (
+				317330D81C5FCF2D00BB2148 /* Sources */,
+				317330D91C5FCF2D00BB2148 /* Frameworks */,
+				317330DA1C5FCF2D00BB2148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fitness Guide";
+			productName = "Fitness Guide";
+			productReference = 317330DC1C5FCF2D00BB2148 /* Fitness Guide.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		317330D41C5FCF2D00BB2148 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = emcako;
+				TargetAttributes = {
+					317330DB1C5FCF2D00BB2148 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = VVKMGK75SG;
+					};
+				};
+			};
+			buildConfigurationList = 317330D71C5FCF2D00BB2148 /* Build configuration list for PBXProject "Fitness Guide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 317330D31C5FCF2D00BB2148;
+			productRefGroup = 317330DD1C5FCF2D00BB2148 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				317330DB1C5FCF2D00BB2148 /* Fitness Guide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		317330DA1C5FCF2D00BB2148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317330F21C5FCF2D00BB2148 /* LaunchScreen.storyboard in Resources */,
+				317330EF1C5FCF2D00BB2148 /* Assets.xcassets in Resources */,
+				317330ED1C5FCF2D00BB2148 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		317330D81C5FCF2D00BB2148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				317330EA1C5FCF2D00BB2148 /* SecondViewController.m in Sources */,
+				317330E41C5FCF2D00BB2148 /* AppDelegate.m in Sources */,
+				317330E71C5FCF2D00BB2148 /* FirstViewController.m in Sources */,
+				317330E11C5FCF2D00BB2148 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		317330EB1C5FCF2D00BB2148 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317330EC1C5FCF2D00BB2148 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		317330F01C5FCF2D00BB2148 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				317330F11C5FCF2D00BB2148 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		317330F41C5FCF2D00BB2148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		317330F51C5FCF2D00BB2148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		317330F71C5FCF2D00BB2148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fitness Guide/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "emcako.Fitness-Guide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		317330F81C5FCF2D00BB2148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Fitness Guide/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "emcako.Fitness-Guide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		317330D71C5FCF2D00BB2148 /* Build configuration list for PBXProject "Fitness Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317330F41C5FCF2D00BB2148 /* Debug */,
+				317330F51C5FCF2D00BB2148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317330F61C5FCF2D00BB2148 /* Build configuration list for PBXNativeTarget "Fitness Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				317330F71C5FCF2D00BB2148 /* Debug */,
+				317330F81C5FCF2D00BB2148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 317330D41C5FCF2D00BB2148 /* Project object */;
+}
