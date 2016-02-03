@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import <Parse/Parse.h>
+#import "Exercise.h"
 
 @interface HomeViewController ()
 
@@ -16,7 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    Exercise* exercise = [Exercise object];
+    
+    exercise.mainMuscle = @"Back";
+    exercise.subMuscle = @"Out Side";
+    exercise.explanation = @"The exercise is mainly for the laterial muscles.It help for building wide back!";
+    exercise.array = [NSMutableArray arrayWithObjects:@"sasa",@"dsrfsgs", nil];
+    // day.monDay = [ prazen masiv i tuka se dobavqt neshtata]
+    [exercise saveInBackground];
 }
 
 - (void)didReceiveMemoryWarning {
