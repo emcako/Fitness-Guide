@@ -7,24 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31380E861C61672C0011F6EB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E851C61672C0011F6EB /* HomeViewController.m */; };
+		31380E891C6167E70011F6EB /* DaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E881C6167E70011F6EB /* DaysViewController.m */; };
+		31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E8B1C616A370011F6EB /* FoodTableViewController.m */; };
+		31380E8F1C616AAF0011F6EB /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E8E1C616AAF0011F6EB /* LocationViewController.m */; };
+		31380E921C616B810011F6EB /* GaleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E911C616B810011F6EB /* GaleryViewController.m */; };
 		317330E11C5FCF2D00BB2148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E01C5FCF2D00BB2148 /* main.m */; };
 		317330E41C5FCF2D00BB2148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E31C5FCF2D00BB2148 /* AppDelegate.m */; };
-		317330E71C5FCF2D00BB2148 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E61C5FCF2D00BB2148 /* FirstViewController.m */; };
-		317330EA1C5FCF2D00BB2148 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E91C5FCF2D00BB2148 /* SecondViewController.m */; };
 		317330ED1C5FCF2D00BB2148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317330EB1C5FCF2D00BB2148 /* Main.storyboard */; };
 		317330EF1C5FCF2D00BB2148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317330EE1C5FCF2D00BB2148 /* Assets.xcassets */; };
 		317330F21C5FCF2D00BB2148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317330F01C5FCF2D00BB2148 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31380E841C61672C0011F6EB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		31380E851C61672C0011F6EB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		31380E871C6167E70011F6EB /* DaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaysViewController.h; sourceTree = "<group>"; };
+		31380E881C6167E70011F6EB /* DaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaysViewController.m; sourceTree = "<group>"; };
+		31380E8A1C616A370011F6EB /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewController.h; sourceTree = "<group>"; };
+		31380E8B1C616A370011F6EB /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewController.m; sourceTree = "<group>"; };
+		31380E8D1C616AAF0011F6EB /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		31380E8E1C616AAF0011F6EB /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		31380E901C616B810011F6EB /* GaleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaleryViewController.h; sourceTree = "<group>"; };
+		31380E911C616B810011F6EB /* GaleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaleryViewController.m; sourceTree = "<group>"; };
 		317330DC1C5FCF2D00BB2148 /* Fitness Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		317330E01C5FCF2D00BB2148 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		317330E21C5FCF2D00BB2148 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		317330E31C5FCF2D00BB2148 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		317330E51C5FCF2D00BB2148 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		317330E61C5FCF2D00BB2148 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		317330E81C5FCF2D00BB2148 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		317330E91C5FCF2D00BB2148 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		317330EC1C5FCF2D00BB2148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		317330EE1C5FCF2D00BB2148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		317330F11C5FCF2D00BB2148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31380E831C6167060011F6EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				31380E841C61672C0011F6EB /* HomeViewController.h */,
+				31380E851C61672C0011F6EB /* HomeViewController.m */,
+				31380E871C6167E70011F6EB /* DaysViewController.h */,
+				31380E881C6167E70011F6EB /* DaysViewController.m */,
+				31380E8A1C616A370011F6EB /* FoodTableViewController.h */,
+				31380E8B1C616A370011F6EB /* FoodTableViewController.m */,
+				31380E8D1C616AAF0011F6EB /* LocationViewController.h */,
+				31380E8E1C616AAF0011F6EB /* LocationViewController.m */,
+				31380E901C616B810011F6EB /* GaleryViewController.h */,
+				31380E911C616B810011F6EB /* GaleryViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		317330D31C5FCF2D00BB2148 = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +87,9 @@
 		317330DE1C5FCF2D00BB2148 /* Fitness Guide */ = {
 			isa = PBXGroup;
 			children = (
+				31380E831C6167060011F6EB /* ViewControllers */,
 				317330E21C5FCF2D00BB2148 /* AppDelegate.h */,
 				317330E31C5FCF2D00BB2148 /* AppDelegate.m */,
-				317330E51C5FCF2D00BB2148 /* FirstViewController.h */,
-				317330E61C5FCF2D00BB2148 /* FirstViewController.m */,
-				317330E81C5FCF2D00BB2148 /* SecondViewController.h */,
-				317330E91C5FCF2D00BB2148 /* SecondViewController.m */,
 				317330EB1C5FCF2D00BB2148 /* Main.storyboard */,
 				317330EE1C5FCF2D00BB2148 /* Assets.xcassets */,
 				317330F01C5FCF2D00BB2148 /* LaunchScreen.storyboard */,
@@ -155,10 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				317330EA1C5FCF2D00BB2148 /* SecondViewController.m in Sources */,
 				317330E41C5FCF2D00BB2148 /* AppDelegate.m in Sources */,
-				317330E71C5FCF2D00BB2148 /* FirstViewController.m in Sources */,
+				31380E8F1C616AAF0011F6EB /* LocationViewController.m in Sources */,
+				31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */,
+				31380E921C616B810011F6EB /* GaleryViewController.m in Sources */,
 				317330E11C5FCF2D00BB2148 /* main.m in Sources */,
+				31380E861C61672C0011F6EB /* HomeViewController.m in Sources */,
+				31380E891C6167E70011F6EB /* DaysViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +331,7 @@
 				317330F81C5FCF2D00BB2148 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
