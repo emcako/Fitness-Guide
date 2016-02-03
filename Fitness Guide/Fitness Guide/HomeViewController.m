@@ -19,14 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    Exercise* exercise = [Exercise object];
-    
-    exercise.mainMuscle = @"Back";
-    exercise.subMuscle = @"Out Side";
-    exercise.explanation = @"The exercise is mainly for the laterial muscles.It help for building wide back!";
-    exercise.array = [NSMutableArray arrayWithObjects:@"sasa",@"dsrfsgs", nil];
-    // day.monDay = [ prazen masiv i tuka se dobavqt neshtata]
-    [exercise saveInBackground];
+    self.title = @"Home";
+//    Exercise* exercise = [Exercise object];
+//    
+//    exercise.mainMuscle = @"Back";
+//    exercise.subMuscle = @"Out Side";
+//    exercise.explanation = @"The exercise is mainly for the laterial muscles.It help for building wide back!";
+//    exercise.array = [NSMutableArray arrayWithObjects:@"sasa",@"dsrfsgs", nil];
+//    // day.monDay = [ prazen masiv i tuka se dobavqt neshtata]
+//    [exercise saveInBackground];   // s bloxk i v nego alert za success
 }
 
 - (void)didReceiveMemoryWarning {
