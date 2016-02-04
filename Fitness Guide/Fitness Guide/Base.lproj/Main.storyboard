@@ -20,8 +20,8 @@
                         <segue destination="H0G-lz-pTW" kind="relationship" relationship="viewControllers" id="5UC-PR-i0Z"/>
                         <segue destination="kDk-TB-yzu" kind="relationship" relationship="viewControllers" id="3nT-9t-JSi"/>
                         <segue destination="0LD-l4-K4t" kind="relationship" relationship="viewControllers" id="gZG-4v-qe1"/>
-                        <segue destination="JUo-ZB-hYT" kind="relationship" relationship="viewControllers" id="pFn-T0-gzD"/>
                         <segue destination="3Hz-fQ-44C" kind="relationship" relationship="viewControllers" id="Z3W-pr-uZY"/>
+                        <segue destination="JUo-ZB-hYT" kind="relationship" relationship="viewControllers" id="pFn-T0-gzD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -49,7 +49,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Galery" id="njf-1U-9f0"/>
+                    <tabBarItem key="tabBarItem" title="Galery" image="Picture" id="njf-1U-9f0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="En5-B5-kHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +76,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="0nO-gN-K9h"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="0nO-gN-K9h"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYL-7X-AFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,7 +198,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.63649312777239753" green="0.43774645000233159" blue="0.71844951923076916" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -256,6 +255,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml8-Qg-pJU">
+                                <rect key="frame" x="20" y="289" width="113" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="m2P-53-VBx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GaZ-nt-hth">
                                 <rect key="frame" x="20" y="318" width="560" height="247"/>
                                 <color key="backgroundColor" red="0.71844951923076916" green="0.71844951923076916" blue="0.71844951923076916" alpha="1" colorSpace="calibratedRGB"/>
@@ -270,15 +278,6 @@
                                     <constraint firstAttribute="width" constant="372" id="s0c-SO-tv2"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml8-Qg-pJU">
-                                <rect key="frame" x="20" y="289" width="113" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="m2P-53-VBx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90280448717948714" green="0.90280448717948714" blue="0.90280448717948714" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -388,7 +387,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Location" id="fcV-gM-XnB"/>
+                    <tabBarItem key="tabBarItem" title="Location" image="Geo-fence-50" id="fcV-gM-XnB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bmh-T4-aKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -425,7 +424,7 @@
                             <outlet property="delegate" destination="0LD-l4-K4t" id="BnO-TO-30C"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Food" id="QV2-Di-duL"/>
+                    <tabBarItem key="tabBarItem" title="Food" image="Food-50" id="QV2-Di-duL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xo8-AK-v3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -435,7 +434,7 @@
         <scene sceneID="H1A-3f-52F">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kDk-TB-yzu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Days" id="k9D-al-L7v"/>
+                    <tabBarItem key="tabBarItem" title="Days" image="Calendar" id="k9D-al-L7v"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yQn-Vz-dOT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -464,4 +463,11 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calendar" width="17" height="17"/>
+        <image name="Food-50" width="16" height="16"/>
+        <image name="Geo-fence-50" width="16" height="16"/>
+        <image name="Home" width="21" height="21"/>
+        <image name="Picture" width="21" height="21"/>
+    </resources>
 </document>
