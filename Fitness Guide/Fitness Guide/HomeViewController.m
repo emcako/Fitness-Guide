@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import <Parse/Parse.h>
 #import "Exercise.h"
+#import "MondayExercise.h"
 
 @interface HomeViewController ()
 
@@ -28,6 +29,12 @@
 //    exercise.array = [NSMutableArray arrayWithObjects:@"sasa",@"dsrfsgs", nil];
 //    // day.monDay = [ prazen masiv i tuka se dobavqt neshtata]
 //    [exercise saveInBackground];   // s bloxk i v nego alert za success
+    
+//    MondayExercise* monday = [MondayExercise object];
+//    monday.mainMuscle = @"Chest";
+//    monday.subMuscle = @"Upper Chest";
+//    monday.explanation = @"adsgsdgbheserfdfvaersdfsdfsdfewdfdw";
+//    [monday saveInBackground];
 }
 
 - (void)didReceiveMemoryWarning {

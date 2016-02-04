@@ -205,6 +205,9 @@
                             <outlet property="delegate" destination="uiC-Yp-aNP" id="FNz-zc-tfX"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tableViewMonday" destination="VYH-xF-3dc" id="DeW-nC-kvQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9f-qU-qQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,12 +230,16 @@
                                 <color key="backgroundColor" red="0.7157088461537533" green="1" blue="0.3824722756752903" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="ADD"/>
+                                <connections>
+                                    <action selector="addExercise:" destination="sSM-4T-XSL" eventType="touchUpInside" id="g6g-4c-j22"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ww-hV-Q6I">
                                 <rect key="frame" x="20" y="119" width="560" height="305"/>
                                 <color key="backgroundColor" red="1" green="0.86509283661977732" blue="0.37180910307924397" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="sSM-4T-XSL" id="tfR-7w-y3r"/>
+                                    <outlet property="delegate" destination="sSM-4T-XSL" id="JQD-ec-bJP"/>
                                 </connections>
                             </tableView>
                         </subviews>

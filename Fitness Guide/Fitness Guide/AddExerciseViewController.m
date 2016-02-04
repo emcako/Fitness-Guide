@@ -8,11 +8,16 @@
 
 #import "AddExerciseViewController.h"
 #import "Exercise.h"
+#import "MondayExercise.h"
 
 
 @interface AddExerciseViewController ()
 
 @property (nonatomic, strong) NSMutableArray* exercises;
+
+@property (nonatomic, strong) Exercise* currentExercise;
+
+@property (nonatomic, strong) MondayExercise* monday;
 
 @end
 
@@ -29,6 +34,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+   
+    
     
     self.title = @"Add Exercise";
     // tuka se vadqt i dobavqt obektite v parse
@@ -47,6 +55,7 @@
         
     }];
     
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,6 +82,30 @@ static NSString* cellIdentifier = @"iden";
     return cell;
 
     
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    self.currentExercise = [self.exercises objectAtIndex:indexPath.row];
+    
+    self.monday = [MondayExercise object];
+    self.monday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
+}
+
+
+- (IBAction)addExercise:(id)sender {
+    [self.monday saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        if (succeeded) {
+            UIAlertView *messageAlert = [[UIAlertView alloc]
+                                         initWithTitle:@"Added successfully" message:[NSString stringWithFormat:@"You added %@ exercise",self.currentExercise.subMuscle]
+                                         delegate:nil
+                                         cancelButtonTitle:@"OK"
+                                         otherButtonTitles:nil];
+            
+            // Display Alert Message
+            [messageAlert show];
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }];
 }
 
 @end

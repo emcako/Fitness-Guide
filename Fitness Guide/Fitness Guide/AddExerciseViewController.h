@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddExerciseViewController : UIViewController<UITableViewDataSource>
+@interface AddExerciseViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableViewAddExercise;
+@property (strong, nonatomic) IBOutlet UITableView *tableViewAddExercise;
 
 @end

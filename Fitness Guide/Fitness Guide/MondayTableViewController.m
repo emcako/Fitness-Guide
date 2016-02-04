@@ -9,27 +9,27 @@
 #import "MondayTableViewController.h"
 #import "AddExerciseViewController.h"
 #import "Exercise.h"
+#import "MondayExercise.h"
 
 
 @interface MondayTableViewController ()
-//-----------------------------------
-//@property (nonatomic, strong) NSMutableArray* exercises;
-//-----------------------------------
+
+@property (nonatomic, strong) NSMutableArray* monday;
+
 @end
 
-@implementation MondayTableViewController    // tuka sashtotot kato v Add-view-to samo che v didLoad-a se ispa s PFObject ot drugiq masiv
+@implementation MondayTableViewController
 
 
 
-
-//- (instancetype)init
-//{
-//    self = [super init];
-//    if (self) {
-//        self.exercises = [NSMutableArray array];
-//    }
-//    return self;
-//}
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.monday = [NSMutableArray array];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,7 +46,43 @@
     // tuka s PF object kato v add-Exercise trqbva da se izvika masiva ot bazata i da drapna datasoursa
     
     
+    PFQuery* query = [PFQuery queryWithClassName:[MondayExercise parseClassName]];
+    
+    //    [query whereKey:@"name" equalTo:@"doncho"];
+    
+    __weak id weakSelf = self;
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
+        
+        if (!error) {
+            [weakSelf setMonday:[NSMutableArray arrayWithArray:objects]];
+            [[weakSelf tableViewMonday ] reloadData];
+        }
+        
+    }];
+
+    
     }
+
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    PFQuery* query = [PFQuery queryWithClassName:[MondayExercise parseClassName]];
+    
+    //    [query whereKey:@"name" equalTo:@"doncho"];
+    
+    __weak id weakSelf = self;
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
+        
+        if (!error) {
+            [weakSelf setMonday:[NSMutableArray arrayWithArray:objects]];
+            [[weakSelf tableViewMonday ] reloadData];
+        }
+        
+    }];
+
+ }
+
 
 -(void) showAdd {
     NSString *storyBoardId = @"addExerciseScene";
@@ -62,27 +98,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    
-//    return self.exercises.count;
-//}
-//
-//static NSString* cellIdentifier = @"iden";
-//
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    
-//    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-//    
-//    if (!cell) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-//    }
-//    
-//    cell.textLabel.text = [[self.exercises objectAtIndex:indexPath.row] mainMuscle];
-//    return cell;
-//    
-//    
-//}
-//
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return self.monday.count;
+}
+
+
+static NSString* cellIdentifier = @"iden";
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    
+    cell.textLabel.text = [[self.monday objectAtIndex:indexPath.row] mainMuscle];
+    return cell;
+    
+    
+}
 
 
 

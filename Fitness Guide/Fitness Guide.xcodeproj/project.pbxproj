@@ -32,6 +32,7 @@
 		3180BC931C62571700E40FBC /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BC921C62571700E40FBC /* Exercise.m */; };
 		3180BC961C62A29900E40FBC /* MondayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BC951C62A29900E40FBC /* MondayTableViewController.m */; };
 		3180BC991C62A8FC00E40FBC /* AddExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BC981C62A8FC00E40FBC /* AddExerciseViewController.m */; };
+		3180BC9C1C634BDD00E40FBC /* MondayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BC9B1C634BDD00E40FBC /* MondayExercise.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		3180BC951C62A29900E40FBC /* MondayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MondayTableViewController.m; sourceTree = "<group>"; };
 		3180BC971C62A8FC00E40FBC /* AddExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddExerciseViewController.h; sourceTree = "<group>"; };
 		3180BC981C62A8FC00E40FBC /* AddExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddExerciseViewController.m; sourceTree = "<group>"; };
+		3180BC9A1C634BDD00E40FBC /* MondayExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MondayExercise.h; sourceTree = "<group>"; };
+		3180BC9B1C634BDD00E40FBC /* MondayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MondayExercise.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 			children = (
 				3180BC911C62571700E40FBC /* Exercise.h */,
 				3180BC921C62571700E40FBC /* Exercise.m */,
+				3180BC9A1C634BDD00E40FBC /* MondayExercise.h */,
+				3180BC9B1C634BDD00E40FBC /* MondayExercise.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				31380E8F1C616AAF0011F6EB /* LocationViewController.m in Sources */,
 				31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */,
 				31380E921C616B810011F6EB /* GaleryViewController.m in Sources */,
+				3180BC9C1C634BDD00E40FBC /* MondayExercise.m in Sources */,
 				3180BC991C62A8FC00E40FBC /* AddExerciseViewController.m in Sources */,
 				317330E11C5FCF2D00BB2148 /* main.m in Sources */,
 				3180BC931C62571700E40FBC /* Exercise.m in Sources */,
