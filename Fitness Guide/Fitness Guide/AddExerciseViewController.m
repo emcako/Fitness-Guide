@@ -89,6 +89,7 @@ static NSString* cellIdentifier = @"iden";
     
     self.monday = [MondayExercise object];
     self.monday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
+    self.monday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
 }
 
 

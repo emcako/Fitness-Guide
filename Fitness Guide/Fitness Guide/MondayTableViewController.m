@@ -10,11 +10,12 @@
 #import "AddExerciseViewController.h"
 #import "Exercise.h"
 #import "MondayExercise.h"
+#import "DetailsViewController.h"
 
 
 @interface MondayTableViewController ()
 
-@property (nonatomic, strong) NSMutableArray* monday;
+@property (nonatomic, strong) NSMutableArray* mondayExercises;
 
 @end
 
@@ -26,7 +27,7 @@
 {
     self = [super init];
     if (self) {
-        self.monday = [NSMutableArray array];
+        self.mondayExercises = [NSMutableArray array];
     }
     return self;
 }
@@ -54,7 +55,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
         
         if (!error) {
-            [weakSelf setMonday:[NSMutableArray arrayWithArray:objects]];
+            [weakSelf setMondayExercises:[NSMutableArray arrayWithArray:objects]];
             [[weakSelf tableViewMonday ] reloadData];
         }
         
@@ -74,7 +75,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
         
         if (!error) {
-            [weakSelf setMonday:[NSMutableArray arrayWithArray:objects]];
+            [weakSelf setMondayExercises:[NSMutableArray arrayWithArray:objects]];
             [[weakSelf tableViewMonday ] reloadData];
         }
         
@@ -100,7 +101,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.monday.count;
+    return self.mondayExercises.count;
 }
 
 
@@ -113,11 +114,24 @@ static NSString* cellIdentifier = @"iden";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = [[self.monday objectAtIndex:indexPath.row] mainMuscle];
+    cell.textLabel.text = [[self.mondayExercises objectAtIndex:indexPath.row] mainMuscle];
     return cell;
     
     
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *) indexPath {
+    
+    Exercise *exercise = [self.mondayExercises objectAtIndex:indexPath.row];
+    NSString *storyBoardId = @"detailsScene";
+    
+    DetailsViewController* details =
+    [self.storyboard instantiateViewControllerWithIdentifier:storyBoardId];
+    details.exercise = exercise;
+    
+    [self.navigationController pushViewController:details animated:YES];
+}
+
 
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -125,7 +139,7 @@ static NSString* cellIdentifier = @"iden";
         
         
         
-       MondayExercise* deleteCurrent = [self.monday objectAtIndex:indexPath.row];
+       MondayExercise* deleteCurrent = [self.mondayExercises objectAtIndex:indexPath.row];
        [deleteCurrent deleteInBackground];
  
         PFQuery* query = [PFQuery queryWithClassName:[MondayExercise parseClassName]];
@@ -134,7 +148,7 @@ static NSString* cellIdentifier = @"iden";
         [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
             
             if (!error) {
-                [weakSelf setMonday:[NSMutableArray arrayWithArray:objects]];
+                [weakSelf setMondayExercises:[NSMutableArray arrayWithArray:objects]];
                 [[weakSelf tableViewMonday ] reloadData];
                 
             }
