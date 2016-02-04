@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MondayTableViewController : UITableViewController<UITableViewDataSource>
+@interface MondayTableViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableViewMonday;
 

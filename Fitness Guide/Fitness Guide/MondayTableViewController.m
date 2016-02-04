@@ -69,8 +69,7 @@
     
     PFQuery* query = [PFQuery queryWithClassName:[MondayExercise parseClassName]];
     
-    //    [query whereKey:@"name" equalTo:@"doncho"];
-    
+
     __weak id weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
         
@@ -121,5 +120,27 @@ static NSString* cellIdentifier = @"iden";
 }
 
 
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if( editingStyle == UITableViewCellEditingStyleDelete){
+        
+        
+        
+       MondayExercise* deleteCurrent = [self.monday objectAtIndex:indexPath.row];
+       [deleteCurrent deleteInBackground];
+ 
+        PFQuery* query = [PFQuery queryWithClassName:[MondayExercise parseClassName]];
+        
+        __weak id weakSelf = self;
+        [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
+            
+            if (!error) {
+                [weakSelf setMonday:[NSMutableArray arrayWithArray:objects]];
+                [[weakSelf tableViewMonday ] reloadData];
+                
+            }
+           
+        }];
+    }
+}
 
 @end
