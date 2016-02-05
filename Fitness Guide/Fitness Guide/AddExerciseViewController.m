@@ -9,6 +9,12 @@
 #import "AddExerciseViewController.h"
 #import "Exercise.h"
 #import "MondayExercise.h"
+#import "TuesdayExercise.h"
+#import "WednesdayExercise.h"
+#import "ThursdayExercise.h"
+#import "FridayExercise.h"
+#import "SaturdayExercise.h"
+#import "SundayExercise.h"
 
 
 @interface AddExerciseViewController ()
@@ -18,7 +24,12 @@
 @property (nonatomic, strong) Exercise* currentExercise;
 
 @property (nonatomic, strong) MondayExercise* monday;
-
+@property (nonatomic, strong) TuesdayExercise* tuesday;
+@property (nonatomic, strong) WednesdayExercise* wednesday;
+@property (nonatomic, strong) ThursdayExercise* thursday;
+@property (nonatomic, strong) FridayExercise* friday;
+@property (nonatomic, strong) SaturdayExercise* saturday;
+@property (nonatomic, strong) SundayExercise* sunday;
 @end
 
 @implementation AddExerciseViewController
@@ -84,29 +95,96 @@ static NSString* cellIdentifier = @"iden";
     
 }
 
+
+static int num = 1;
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.currentExercise = [self.exercises objectAtIndex:indexPath.row];
     
-    self.monday = [MondayExercise object];
-    self.monday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
-    self.monday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+    if ([self.check  isEqual: @"Monday"]) {
+        
+        self.monday = [MondayExercise object];
+        self.monday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
+        self.monday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        num = 1;
+        
+    } else if ([self.check  isEqual: @"Tuesday"]){
+        
+        self.tuesday = [TuesdayExercise object];
+        self.tuesday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
+        self.tuesday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        num = 2;
+        
+    } else if ([self.check  isEqual: @"Wednesday"]){
+        
+        self.wednesday = [WednesdayExercise object];
+        self.wednesday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
+        self.wednesday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        num = 3;
+        
+    } else if ([self.check  isEqual: @"Thursday"]){
+        
+        self.thursday = [ThursdayExercise object];
+        self.thursday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
+        self.thursday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        num = 4;
+        
+    } else if ([self.check  isEqual: @"Friday"]){
+        
+        self.friday = [FridayExercise object];
+        self.friday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
+        self.friday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        num = 5;
+        
+    } else if ([self.check  isEqual: @"Saturday"]){
+        
+        self.saturday = [SaturdayExercise object];
+        self.saturday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
+        self.saturday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        num = 6;
+        
+    } else if ([self.check  isEqual: @"Sunday"]){
+        
+        self.sunday = [SundayExercise object];
+        self.sunday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
+        self.sunday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        num = 7;
+        
+    }
+    
+    
 }
 
 
 - (IBAction)addExercise:(id)sender {
-    [self.monday saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
-        if (succeeded) {
-            UIAlertView *messageAlert = [[UIAlertView alloc]
-                                         initWithTitle:@"Added successfully" message:[NSString stringWithFormat:@"You added %@ exercise",self.currentExercise.subMuscle]
-                                         delegate:nil
-                                         cancelButtonTitle:@"OK"
-                                         otherButtonTitles:nil];
-            
-            // Display Alert Message
-            [messageAlert show];
-            [self.navigationController popViewControllerAnimated:YES];
-        }
-    }];
+    
+    if (num == 1) {
+        [self.monday saveInBackground];
+    } else if (num == 2){
+        [self.tuesday saveInBackground];
+    } else if (num == 3){
+        [self.wednesday saveInBackground];
+    } else if (num == 4){
+        [self.thursday saveInBackground];
+    } else if (num == 5){
+        [self.friday saveInBackground];
+    } else if (num == 6){
+        [self.saturday saveInBackground];
+    } else if (num == 7){
+        [self.sunday saveInBackground];
+    }
+    
+    
+    
+    UIAlertView *messageAlert = [[UIAlertView alloc] initWithTitle:@"Added successfully"
+                                message:[NSString stringWithFormat:@"You added %@ exercise",self.currentExercise.subMuscle]
+                                                          delegate:nil
+                                                 cancelButtonTitle:@"OK"
+                                                 otherButtonTitles:nil];
+                                 
+    
+    [messageAlert show];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

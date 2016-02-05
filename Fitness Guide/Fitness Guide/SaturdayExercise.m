@@ -1,24 +1,25 @@
 //
-//  Exercise.m
+//  SaturdayExercise.m
 //  Fitness Guide
 //
-//  Created by emcako on 03/02/2016.
+//  Created by emcako on 05/02/2016.
 //  Copyright © 2016 emcako. All rights reserved.
 //
 
-#import "Exercise.h"
+#import "SaturdayExercise.h"
 
-@implementation Exercise
+@implementation SaturdayExercise
 
 @dynamic mainMuscle;
 @dynamic subMuscle;
 @dynamic explanation;
 
 +(NSString *)parseClassName{
-    return @"Exercise";
+    return @"SaturdayExercise";
 }
 
 +(void)load{
     [self registerSubclass];
 }
+
 @end

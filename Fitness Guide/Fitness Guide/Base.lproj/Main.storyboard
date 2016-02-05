@@ -94,49 +94,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRV-1C-6V7">
-                                <rect key="frame" x="142" y="167" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Tuesday"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGk-cy-HjL">
-                                <rect key="frame" x="142" y="216" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Wednesday"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-nv-UIR">
-                                <rect key="frame" x="142" y="259" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Thursday"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hF-rd-5db">
-                                <rect key="frame" x="155" y="308" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Friday"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5D-h0-DJD">
-                                <rect key="frame" x="142" y="368" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Saturday"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUs-JP-G5d">
-                                <rect key="frame" x="142" y="434" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Sunday"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tI-8o-918">
                                 <rect key="frame" x="20" y="119" width="527" height="30"/>
                                 <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="MONDAY"/>
                                 <connections>
-                                    <segue destination="uiC-Yp-aNP" kind="show" id="VKs-Tk-eK1"/>
+                                    <action selector="goToMondayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="9Lh-Zj-F1d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRV-1C-6V7">
+                                <rect key="frame" x="142" y="167" width="302" height="41"/>
+                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Tuesday"/>
+                                <connections>
+                                    <action selector="goToTuesdayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="EKf-ra-2aR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGk-cy-HjL">
+                                <rect key="frame" x="142" y="216" width="302" height="41"/>
+                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Wednesday"/>
+                                <connections>
+                                    <action selector="goToWednesdayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="oDU-fV-mtE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-nv-UIR">
+                                <rect key="frame" x="142" y="259" width="302" height="41"/>
+                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Thursday"/>
+                                <connections>
+                                    <action selector="goToThursdayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="ZRg-T6-z9W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hF-rd-5db">
+                                <rect key="frame" x="156" y="308" width="302" height="41"/>
+                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Friday"/>
+                                <connections>
+                                    <action selector="goToFridayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="nvQ-YT-t2R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5D-h0-DJD">
+                                <rect key="frame" x="142" y="367" width="302" height="41"/>
+                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Saturday"/>
+                                <connections>
+                                    <action selector="goToSaturdayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="HU1-m5-brq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUs-JP-G5d">
+                                <rect key="frame" x="142" y="434" width="302" height="41"/>
+                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Sunday"/>
+                                <connections>
+                                    <action selector="goToSundayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="J3U-jb-5SB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -185,14 +203,14 @@
         <!--Monday Table View Controller-->
         <scene sceneID="Y1E-Ge-ygQ">
             <objects>
-                <tableViewController id="uiC-Yp-aNP" customClass="MondayTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AllTableView" id="uiC-Yp-aNP" customClass="MondayTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VYH-xF-3dc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mxt-26-zfC">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mxt-26-zfC" id="WPd-iq-rdm">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -212,6 +230,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C9f-qU-qQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1263" y="72"/>
+        </scene>
+        <!--Tuesday Table View Controller-->
+        <scene sceneID="WbW-ha-0h3">
+            <objects>
+                <tableViewController id="Cxo-iE-q7G" customClass="TuesdayTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eEK-98-Kua">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="orv-Lh-lo0">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="orv-Lh-lo0" id="JBb-Fd-D7L">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cxo-iE-q7G" id="UWi-uD-wKd"/>
+                            <outlet property="delegate" destination="Cxo-iE-q7G" id="eqq-PG-xqF"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableViewTuesday" destination="eEK-98-Kua" id="9ox-vl-bSI"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCS-JT-6On" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="710"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="bSC-Mx-lJB">
@@ -428,7 +477,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xo8-AK-v3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599" y="775"/>
+            <point key="canvasLocation" x="-201" y="759"/>
         </scene>
         <!--Days-->
         <scene sceneID="H1A-3f-52F">
@@ -448,19 +497,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfU-3O-tlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-76" y="72"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="h3U-ID-nIs">
-            <objects>
-                <viewController id="k1J-vS-jTy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XnO-v4-Tzb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OkB-gf-mNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>

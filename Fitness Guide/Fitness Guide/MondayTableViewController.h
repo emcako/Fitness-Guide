@@ -12,4 +12,8 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *tableViewMonday;
 
+@property(strong, nonatomic) NSString* titleStirng;
+
+@property(strong, nonatomic) NSString* className;
+
 @end

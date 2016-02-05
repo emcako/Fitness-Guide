@@ -34,6 +34,12 @@
 		3180BC991C62A8FC00E40FBC /* AddExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BC981C62A8FC00E40FBC /* AddExerciseViewController.m */; };
 		3180BC9C1C634BDD00E40FBC /* MondayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BC9B1C634BDD00E40FBC /* MondayExercise.m */; };
 		3180BC9F1C63AF5700E40FBC /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BC9E1C63AF5700E40FBC /* DetailsViewController.m */; };
+		3180BCA41C640ADF00E40FBC /* TuesdayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCA31C640ADF00E40FBC /* TuesdayExercise.m */; };
+		3180BCAA1C64A06F00E40FBC /* WednesdayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCA91C64A06F00E40FBC /* WednesdayExercise.m */; };
+		3180BCAD1C64D51F00E40FBC /* ThursdayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCAC1C64D51F00E40FBC /* ThursdayExercise.m */; };
+		3180BCB01C64D65800E40FBC /* FridayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCAF1C64D65800E40FBC /* FridayExercise.m */; };
+		3180BCB31C64D68C00E40FBC /* SaturdayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCB21C64D68C00E40FBC /* SaturdayExercise.m */; };
+		3180BCB61C64D6DA00E40FBC /* SundayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCB51C64D6DA00E40FBC /* SundayExercise.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +83,18 @@
 		3180BC9B1C634BDD00E40FBC /* MondayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MondayExercise.m; sourceTree = "<group>"; };
 		3180BC9D1C63AF5700E40FBC /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		3180BC9E1C63AF5700E40FBC /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		3180BCA21C640ADF00E40FBC /* TuesdayExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuesdayExercise.h; sourceTree = "<group>"; };
+		3180BCA31C640ADF00E40FBC /* TuesdayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuesdayExercise.m; sourceTree = "<group>"; };
+		3180BCA81C64A06F00E40FBC /* WednesdayExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WednesdayExercise.h; sourceTree = "<group>"; };
+		3180BCA91C64A06F00E40FBC /* WednesdayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WednesdayExercise.m; sourceTree = "<group>"; };
+		3180BCAB1C64D51F00E40FBC /* ThursdayExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThursdayExercise.h; sourceTree = "<group>"; };
+		3180BCAC1C64D51F00E40FBC /* ThursdayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThursdayExercise.m; sourceTree = "<group>"; };
+		3180BCAE1C64D65800E40FBC /* FridayExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FridayExercise.h; sourceTree = "<group>"; };
+		3180BCAF1C64D65800E40FBC /* FridayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridayExercise.m; sourceTree = "<group>"; };
+		3180BCB11C64D68C00E40FBC /* SaturdayExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaturdayExercise.h; sourceTree = "<group>"; };
+		3180BCB21C64D68C00E40FBC /* SaturdayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaturdayExercise.m; sourceTree = "<group>"; };
+		3180BCB41C64D6DA00E40FBC /* SundayExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SundayExercise.h; sourceTree = "<group>"; };
+		3180BCB51C64D6DA00E40FBC /* SundayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SundayExercise.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,18 +142,8 @@
 		31380E831C6167060011F6EB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				31380E841C61672C0011F6EB /* HomeViewController.h */,
-				31380E851C61672C0011F6EB /* HomeViewController.m */,
-				31380E871C6167E70011F6EB /* DaysViewController.h */,
-				31380E881C6167E70011F6EB /* DaysViewController.m */,
-				31380E8A1C616A370011F6EB /* FoodTableViewController.h */,
-				31380E8B1C616A370011F6EB /* FoodTableViewController.m */,
-				31380E8D1C616AAF0011F6EB /* LocationViewController.h */,
-				31380E8E1C616AAF0011F6EB /* LocationViewController.m */,
-				31380E901C616B810011F6EB /* GaleryViewController.h */,
-				31380E911C616B810011F6EB /* GaleryViewController.m */,
-				3180BC941C62A29900E40FBC /* MondayTableViewController.h */,
-				3180BC951C62A29900E40FBC /* MondayTableViewController.m */,
+				3180BCA01C64093600E40FBC /* TabControllers */,
+				3180BCA11C64096500E40FBC /* DayControllers */,
 				3180BC971C62A8FC00E40FBC /* AddExerciseViewController.h */,
 				3180BC981C62A8FC00E40FBC /* AddExerciseViewController.m */,
 				3180BC9D1C63AF5700E40FBC /* DetailsViewController.h */,
@@ -192,8 +200,46 @@
 				3180BC921C62571700E40FBC /* Exercise.m */,
 				3180BC9A1C634BDD00E40FBC /* MondayExercise.h */,
 				3180BC9B1C634BDD00E40FBC /* MondayExercise.m */,
+				3180BCA21C640ADF00E40FBC /* TuesdayExercise.h */,
+				3180BCA31C640ADF00E40FBC /* TuesdayExercise.m */,
+				3180BCA81C64A06F00E40FBC /* WednesdayExercise.h */,
+				3180BCA91C64A06F00E40FBC /* WednesdayExercise.m */,
+				3180BCAB1C64D51F00E40FBC /* ThursdayExercise.h */,
+				3180BCAC1C64D51F00E40FBC /* ThursdayExercise.m */,
+				3180BCAE1C64D65800E40FBC /* FridayExercise.h */,
+				3180BCAF1C64D65800E40FBC /* FridayExercise.m */,
+				3180BCB11C64D68C00E40FBC /* SaturdayExercise.h */,
+				3180BCB21C64D68C00E40FBC /* SaturdayExercise.m */,
+				3180BCB41C64D6DA00E40FBC /* SundayExercise.h */,
+				3180BCB51C64D6DA00E40FBC /* SundayExercise.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		3180BCA01C64093600E40FBC /* TabControllers */ = {
+			isa = PBXGroup;
+			children = (
+				31380E841C61672C0011F6EB /* HomeViewController.h */,
+				31380E851C61672C0011F6EB /* HomeViewController.m */,
+				31380E871C6167E70011F6EB /* DaysViewController.h */,
+				31380E881C6167E70011F6EB /* DaysViewController.m */,
+				31380E8A1C616A370011F6EB /* FoodTableViewController.h */,
+				31380E8B1C616A370011F6EB /* FoodTableViewController.m */,
+				31380E8D1C616AAF0011F6EB /* LocationViewController.h */,
+				31380E8E1C616AAF0011F6EB /* LocationViewController.m */,
+				31380E901C616B810011F6EB /* GaleryViewController.h */,
+				31380E911C616B810011F6EB /* GaleryViewController.m */,
+			);
+			name = TabControllers;
+			sourceTree = "<group>";
+		};
+		3180BCA11C64096500E40FBC /* DayControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3180BC941C62A29900E40FBC /* MondayTableViewController.h */,
+				3180BC951C62A29900E40FBC /* MondayTableViewController.m */,
+			);
+			name = DayControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,14 +315,20 @@
 			files = (
 				317330E41C5FCF2D00BB2148 /* AppDelegate.m in Sources */,
 				31380E8F1C616AAF0011F6EB /* LocationViewController.m in Sources */,
+				3180BCB01C64D65800E40FBC /* FridayExercise.m in Sources */,
 				31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */,
 				3180BC9F1C63AF5700E40FBC /* DetailsViewController.m in Sources */,
 				31380E921C616B810011F6EB /* GaleryViewController.m in Sources */,
 				3180BC9C1C634BDD00E40FBC /* MondayExercise.m in Sources */,
+				3180BCB31C64D68C00E40FBC /* SaturdayExercise.m in Sources */,
 				3180BC991C62A8FC00E40FBC /* AddExerciseViewController.m in Sources */,
+				3180BCA41C640ADF00E40FBC /* TuesdayExercise.m in Sources */,
 				317330E11C5FCF2D00BB2148 /* main.m in Sources */,
+				3180BCB61C64D6DA00E40FBC /* SundayExercise.m in Sources */,
 				3180BC931C62571700E40FBC /* Exercise.m in Sources */,
+				3180BCAA1C64A06F00E40FBC /* WednesdayExercise.m in Sources */,
 				31380E861C61672C0011F6EB /* HomeViewController.m in Sources */,
+				3180BCAD1C64D51F00E40FBC /* ThursdayExercise.m in Sources */,
 				3180BC961C62A29900E40FBC /* MondayTableViewController.m in Sources */,
 				31380E891C6167E70011F6EB /* DaysViewController.m in Sources */,
 			);

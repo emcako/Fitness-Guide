@@ -11,5 +11,6 @@
 @interface AddExerciseViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableViewAddExercise;
+@property (strong, nonatomic) NSString* check;
 
 @end

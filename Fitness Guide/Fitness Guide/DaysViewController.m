@@ -7,12 +7,16 @@
 //
 
 #import "DaysViewController.h"
+#import "MondayTableViewController.h"
 
 @interface DaysViewController ()
-
 @end
 
 @implementation DaysViewController
+
+NSString *storyBoardIdTV = @"AllTableView";
+MondayTableViewController* tvAll;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,14 +29,70 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (IBAction)goToMondayTV:(id)sender {
+    
+    tvAll = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardIdTV];
+    tvAll.titleStirng = @"Monday";
+    tvAll.className = @"MondayExercise";
+    
+    [self.navigationController pushViewController:tvAll animated:YES];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+- (IBAction)goToTuesdayTV:(id)sender {
+    
+    tvAll = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardIdTV];
+    tvAll.titleStirng = @"Tuesday";
+    tvAll.className = @"TuesdayExercise";
+    
+    [self.navigationController pushViewController:tvAll animated:YES];
+}
+
+
+
+
+- (IBAction)goToWednesdayTV:(id)sender {
+    
+    tvAll = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardIdTV];
+    tvAll.titleStirng = @"Wednesday";
+    tvAll.className = @"WednesdayExercise";
+    
+    [self.navigationController pushViewController:tvAll animated:YES];
+}
+
+- (IBAction)goToThursdayTV:(id)sender {
+    
+    tvAll = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardIdTV];
+    tvAll.titleStirng = @"Thursday";
+    tvAll.className = @"ThursdayExercise";
+    
+    [self.navigationController pushViewController:tvAll animated:YES];
+}
+
+- (IBAction)goToFridayTV:(id)sender {
+    
+    tvAll = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardIdTV];
+    tvAll.titleStirng = @"Friday";
+    tvAll.className = @"FridayExercise";
+    
+    [self.navigationController pushViewController:tvAll animated:YES];
+}
+
+- (IBAction)goToSaturdayTV:(id)sender {
+    
+    tvAll = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardIdTV];
+    tvAll.titleStirng = @"Saturday";
+    tvAll.className = @"SaturdayExercise";
+    
+    [self.navigationController pushViewController:tvAll animated:YES];
+    
+}
+- (IBAction)goToSundayTV:(id)sender {
+    
+    tvAll = [self.storyboard instantiateViewControllerWithIdentifier:storyBoardIdTV];
+    tvAll.titleStirng = @"Sunday";
+    tvAll.className = @"SundayExercise";
+    
+    [self.navigationController pushViewController:tvAll animated:YES];
+}
 
 @end
