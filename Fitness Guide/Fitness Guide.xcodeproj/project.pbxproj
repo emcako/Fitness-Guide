@@ -40,6 +40,8 @@
 		3180BCB01C64D65800E40FBC /* FridayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCAF1C64D65800E40FBC /* FridayExercise.m */; };
 		3180BCB31C64D68C00E40FBC /* SaturdayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCB21C64D68C00E40FBC /* SaturdayExercise.m */; };
 		3180BCB61C64D6DA00E40FBC /* SundayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCB51C64D6DA00E40FBC /* SundayExercise.m */; };
+		3180BCB91C65464000E40FBC /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3180BCB81C65464000E40FBC /* ExerciseCell.xib */; };
+		3180BCBC1C65492800E40FBC /* ExerciseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCBB1C65492800E40FBC /* ExerciseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +97,9 @@
 		3180BCB21C64D68C00E40FBC /* SaturdayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaturdayExercise.m; sourceTree = "<group>"; };
 		3180BCB41C64D6DA00E40FBC /* SundayExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SundayExercise.h; sourceTree = "<group>"; };
 		3180BCB51C64D6DA00E40FBC /* SundayExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SundayExercise.m; sourceTree = "<group>"; };
+		3180BCB81C65464000E40FBC /* ExerciseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
+		3180BCBA1C65492800E40FBC /* ExerciseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseCell.h; sourceTree = "<group>"; };
+		3180BCBB1C65492800E40FBC /* ExerciseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +177,7 @@
 		317330DE1C5FCF2D00BB2148 /* Fitness Guide */ = {
 			isa = PBXGroup;
 			children = (
+				3180BCB71C6544CB00E40FBC /* Views */,
 				3180BC901C62520800E40FBC /* Models */,
 				31380E831C6167060011F6EB /* ViewControllers */,
 				317330E21C5FCF2D00BB2148 /* AppDelegate.h */,
@@ -242,6 +248,16 @@
 			name = DayControllers;
 			sourceTree = "<group>";
 		};
+		3180BCB71C6544CB00E40FBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3180BCB81C65464000E40FBC /* ExerciseCell.xib */,
+				3180BCBA1C65492800E40FBC /* ExerciseCell.h */,
+				3180BCBB1C65492800E40FBC /* ExerciseCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				317330F21C5FCF2D00BB2148 /* LaunchScreen.storyboard in Resources */,
+				3180BCB91C65464000E40FBC /* ExerciseCell.xib in Resources */,
 				317330EF1C5FCF2D00BB2148 /* Assets.xcassets in Resources */,
 				317330ED1C5FCF2D00BB2148 /* Main.storyboard in Resources */,
 			);
@@ -327,6 +344,7 @@
 				3180BCB61C64D6DA00E40FBC /* SundayExercise.m in Sources */,
 				3180BC931C62571700E40FBC /* Exercise.m in Sources */,
 				3180BCAA1C64A06F00E40FBC /* WednesdayExercise.m in Sources */,
+				3180BCBC1C65492800E40FBC /* ExerciseCell.m in Sources */,
 				31380E861C61672C0011F6EB /* HomeViewController.m in Sources */,
 				3180BCAD1C64D51F00E40FBC /* ThursdayExercise.m in Sources */,
 				3180BC961C62A29900E40FBC /* MondayTableViewController.m in Sources */,

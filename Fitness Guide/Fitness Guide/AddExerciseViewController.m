@@ -15,6 +15,7 @@
 #import "FridayExercise.h"
 #import "SaturdayExercise.h"
 #import "SundayExercise.h"
+#import "ExerciseCell.h"
 
 
 @interface AddExerciseViewController ()
@@ -83,16 +84,18 @@ static NSString* cellIdentifier = @"iden";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    ExerciseCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"ExerciseCell" owner:self options:nil] objectAtIndex:0];
     }
     
-    cell.textLabel.text = [[self.exercises objectAtIndex:indexPath.row] mainMuscle];
-    return cell;
-
+    Exercise* exercise = [self.exercises objectAtIndex:indexPath.row];
+    cell.mainMuscleLabel.text = exercise.mainMuscle;
+    cell.subMuscleLabel.text = exercise.subMuscle;
+    cell.cellImageView.image = [UIImage imageNamed:@"Tricepss"];
     
+    return cell;
 }
 
 
@@ -187,4 +190,7 @@ static int num = 1;
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
+}
 @end

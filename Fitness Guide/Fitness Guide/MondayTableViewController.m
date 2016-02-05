@@ -17,6 +17,7 @@
 #import "FridayExercise.h"
 #import "SaturdayExercise.h"
 #import "SundayExercise.h"
+#import "ExerciseCell.h"
 
 @interface MondayTableViewController ()
 
@@ -112,13 +113,20 @@
 static NSString* cellIdentifier = @"iden";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    ExerciseCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"ExerciseCell" owner:self options:nil] objectAtIndex:0];
+        
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    Exercise* exercise = [self.mondayExercises objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = [[self.mondayExercises objectAtIndex:indexPath.row] mainMuscle];
+    cell.mainMuscleLabel.text = exercise.mainMuscle;
+    cell.subMuscleLabel.text = exercise.subMuscle;
+    cell.cellImageView.image = [UIImage imageNamed:@"Tricepss"];// [NSString stringWithFirmat:@"%@%@", exercise.mainMuscle, exercise.subMuscle] ili
+                                                            // vseki exercise da pazi image kato string i tuka da se podava samo exercise.image
+                                                            // i v bazata da otiva an string samo edin string v bazata i tva e      ^
     return cell;
     
     
@@ -196,4 +204,8 @@ static NSString* cellIdentifier = @"iden";
     }
 }
 
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
+}
 @end
