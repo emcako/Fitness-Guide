@@ -18,27 +18,25 @@ class CurrentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         self.mapsView.showsUserLocation = true
         self.mapsView.showsCompass = true
-           }
-
+    }
+    
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
         let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span:MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        let region = MKCoordinateRegion(center: center, span:MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002))
         self.mapsView.setRegion(region, animated: true)
         self.locationManager.stopUpdatingLocation()
-
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-}
+    }}

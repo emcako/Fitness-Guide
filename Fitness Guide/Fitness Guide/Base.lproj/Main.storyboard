@@ -19,15 +19,15 @@
                         <segue destination="H0G-lz-pTW" kind="relationship" relationship="viewControllers" id="5UC-PR-i0Z"/>
                         <segue destination="kDk-TB-yzu" kind="relationship" relationship="viewControllers" id="3nT-9t-JSi"/>
                         <segue destination="0LD-l4-K4t" kind="relationship" relationship="viewControllers" id="gZG-4v-qe1"/>
-                        <segue destination="3Hz-fQ-44C" kind="relationship" relationship="viewControllers" id="Z3W-pr-uZY"/>
+                        <segue destination="oiQ-pd-ytv" kind="relationship" relationship="viewControllers" id="Z3W-pr-uZY"/>
                         <segue destination="JUo-ZB-hYT" kind="relationship" relationship="viewControllers" id="pFn-T0-gzD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1307" y="7"/>
+            <point key="canvasLocation" x="-1571" y="-153"/>
         </scene>
-        <!--Galery-->
+        <!--Galery View Controller-->
         <scene sceneID="mUh-lv-vkx">
             <objects>
                 <viewController id="3Hz-fQ-44C" customClass="GaleryViewController" sceneMemberID="viewController">
@@ -38,21 +38,13 @@
                     <view key="view" contentMode="scaleToFill" id="83n-9Q-I8b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Galery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDG-sV-UrV">
-                                <rect key="frame" x="12" y="289" width="65" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Galery" image="Picture" id="njf-1U-9f0"/>
+                    <navigationItem key="navigationItem" id="4vn-59-MMa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="En5-B5-kHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-855" y="-579"/>
+            <point key="canvasLocation" x="-43" y="-579"/>
         </scene>
         <!--Home-->
         <scene sceneID="bbO-9P-Tti">
@@ -79,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYL-7X-AFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599" y="-591"/>
+            <point key="canvasLocation" x="1411" y="-591"/>
         </scene>
         <!--Days View Controller-->
         <scene sceneID="haI-zH-WAs">
@@ -261,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmL-le-iHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1263" y="-596.99999999999989"/>
+            <point key="canvasLocation" x="2075" y="-597"/>
         </scene>
         <!--Add Exercise View Controller-->
         <scene sceneID="efv-0j-MVq">
@@ -393,6 +385,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfU-3O-tlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-76" y="71.999999999999986"/>
+        </scene>
+        <!--Galery-->
+        <scene sceneID="7Sh-2e-lsg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oiQ-pd-ytv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Galery" image="Picture" id="njf-1U-9f0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DF6-ca-3jb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Hz-fQ-44C" kind="relationship" relationship="rootViewController" id="tiJ-Oc-Gu8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhD-qV-Kmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855" y="-579"/>
         </scene>
     </scenes>
     <resources>

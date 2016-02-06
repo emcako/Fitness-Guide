@@ -22,7 +22,6 @@
 		31380E861C61672C0011F6EB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E851C61672C0011F6EB /* HomeViewController.m */; };
 		31380E891C6167E70011F6EB /* DaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E881C6167E70011F6EB /* DaysViewController.m */; };
 		31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E8B1C616A370011F6EB /* FoodTableViewController.m */; };
-		31380E921C616B810011F6EB /* GaleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E911C616B810011F6EB /* GaleryViewController.m */; };
 		317330E11C5FCF2D00BB2148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E01C5FCF2D00BB2148 /* main.m */; };
 		317330E41C5FCF2D00BB2148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E31C5FCF2D00BB2148 /* AppDelegate.m */; };
 		317330ED1C5FCF2D00BB2148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317330EB1C5FCF2D00BB2148 /* Main.storyboard */; };
@@ -42,6 +41,7 @@
 		3180BCB91C65464000E40FBC /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3180BCB81C65464000E40FBC /* ExerciseCell.xib */; };
 		3180BCBC1C65492800E40FBC /* ExerciseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCBB1C65492800E40FBC /* ExerciseCell.m */; };
 		3180BCC11C6612D800E40FBC /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCC01C6612D800E40FBC /* CurrentLocationViewController.swift */; };
+		3180BCC91C663C2B00E40FBC /* GaleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCC81C663C2B00E40FBC /* GaleryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +63,6 @@
 		31380E881C6167E70011F6EB /* DaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaysViewController.m; sourceTree = "<group>"; };
 		31380E8A1C616A370011F6EB /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewController.h; sourceTree = "<group>"; };
 		31380E8B1C616A370011F6EB /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewController.m; sourceTree = "<group>"; };
-		31380E901C616B810011F6EB /* GaleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaleryViewController.h; sourceTree = "<group>"; };
-		31380E911C616B810011F6EB /* GaleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaleryViewController.m; sourceTree = "<group>"; };
 		317330DC1C5FCF2D00BB2148 /* Fitness Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		317330E01C5FCF2D00BB2148 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		317330E21C5FCF2D00BB2148 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +98,8 @@
 		3180BCBB1C65492800E40FBC /* ExerciseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseCell.m; sourceTree = "<group>"; };
 		3180BCBD1C65F27800E40FBC /* Fitness Guide-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fitness Guide-Bridging-Header.h"; sourceTree = "<group>"; };
 		3180BCC01C6612D800E40FBC /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
+		3180BCC71C663C2B00E40FBC /* GaleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaleryViewController.h; sourceTree = "<group>"; };
+		3180BCC81C663C2B00E40FBC /* GaleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaleryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,10 +231,10 @@
 				31380E881C6167E70011F6EB /* DaysViewController.m */,
 				31380E8A1C616A370011F6EB /* FoodTableViewController.h */,
 				31380E8B1C616A370011F6EB /* FoodTableViewController.m */,
-				31380E901C616B810011F6EB /* GaleryViewController.h */,
-				31380E911C616B810011F6EB /* GaleryViewController.m */,
 				3180BCBD1C65F27800E40FBC /* Fitness Guide-Bridging-Header.h */,
 				3180BCC01C6612D800E40FBC /* CurrentLocationViewController.swift */,
+				3180BCC71C663C2B00E40FBC /* GaleryViewController.h */,
+				3180BCC81C663C2B00E40FBC /* GaleryViewController.m */,
 			);
 			name = TabControllers;
 			sourceTree = "<group>";
@@ -335,12 +335,12 @@
 				3180BCB01C64D65800E40FBC /* FridayExercise.m in Sources */,
 				31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */,
 				3180BC9F1C63AF5700E40FBC /* DetailsViewController.m in Sources */,
-				31380E921C616B810011F6EB /* GaleryViewController.m in Sources */,
 				3180BC9C1C634BDD00E40FBC /* MondayExercise.m in Sources */,
 				3180BCB31C64D68C00E40FBC /* SaturdayExercise.m in Sources */,
 				3180BC991C62A8FC00E40FBC /* AddExerciseViewController.m in Sources */,
 				3180BCA41C640ADF00E40FBC /* TuesdayExercise.m in Sources */,
 				317330E11C5FCF2D00BB2148 /* main.m in Sources */,
+				3180BCC91C663C2B00E40FBC /* GaleryViewController.m in Sources */,
 				3180BCB61C64D6DA00E40FBC /* SundayExercise.m in Sources */,
 				3180BC931C62571700E40FBC /* Exercise.m in Sources */,
 				3180BCAA1C64A06F00E40FBC /* WednesdayExercise.m in Sources */,
