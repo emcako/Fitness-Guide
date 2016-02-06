@@ -22,7 +22,6 @@
 		31380E861C61672C0011F6EB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E851C61672C0011F6EB /* HomeViewController.m */; };
 		31380E891C6167E70011F6EB /* DaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E881C6167E70011F6EB /* DaysViewController.m */; };
 		31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E8B1C616A370011F6EB /* FoodTableViewController.m */; };
-		31380E8F1C616AAF0011F6EB /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E8E1C616AAF0011F6EB /* LocationViewController.m */; };
 		31380E921C616B810011F6EB /* GaleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E911C616B810011F6EB /* GaleryViewController.m */; };
 		317330E11C5FCF2D00BB2148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E01C5FCF2D00BB2148 /* main.m */; };
 		317330E41C5FCF2D00BB2148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E31C5FCF2D00BB2148 /* AppDelegate.m */; };
@@ -42,6 +41,7 @@
 		3180BCB61C64D6DA00E40FBC /* SundayExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCB51C64D6DA00E40FBC /* SundayExercise.m */; };
 		3180BCB91C65464000E40FBC /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3180BCB81C65464000E40FBC /* ExerciseCell.xib */; };
 		3180BCBC1C65492800E40FBC /* ExerciseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCBB1C65492800E40FBC /* ExerciseCell.m */; };
+		3180BCC11C6612D800E40FBC /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCC01C6612D800E40FBC /* CurrentLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +63,6 @@
 		31380E881C6167E70011F6EB /* DaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaysViewController.m; sourceTree = "<group>"; };
 		31380E8A1C616A370011F6EB /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewController.h; sourceTree = "<group>"; };
 		31380E8B1C616A370011F6EB /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewController.m; sourceTree = "<group>"; };
-		31380E8D1C616AAF0011F6EB /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
-		31380E8E1C616AAF0011F6EB /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		31380E901C616B810011F6EB /* GaleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaleryViewController.h; sourceTree = "<group>"; };
 		31380E911C616B810011F6EB /* GaleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaleryViewController.m; sourceTree = "<group>"; };
 		317330DC1C5FCF2D00BB2148 /* Fitness Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +98,8 @@
 		3180BCB81C65464000E40FBC /* ExerciseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
 		3180BCBA1C65492800E40FBC /* ExerciseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseCell.h; sourceTree = "<group>"; };
 		3180BCBB1C65492800E40FBC /* ExerciseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseCell.m; sourceTree = "<group>"; };
+		3180BCBD1C65F27800E40FBC /* Fitness Guide-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fitness Guide-Bridging-Header.h"; sourceTree = "<group>"; };
+		3180BCC01C6612D800E40FBC /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,10 +231,10 @@
 				31380E881C6167E70011F6EB /* DaysViewController.m */,
 				31380E8A1C616A370011F6EB /* FoodTableViewController.h */,
 				31380E8B1C616A370011F6EB /* FoodTableViewController.m */,
-				31380E8D1C616AAF0011F6EB /* LocationViewController.h */,
-				31380E8E1C616AAF0011F6EB /* LocationViewController.m */,
 				31380E901C616B810011F6EB /* GaleryViewController.h */,
 				31380E911C616B810011F6EB /* GaleryViewController.m */,
+				3180BCBD1C65F27800E40FBC /* Fitness Guide-Bridging-Header.h */,
+				3180BCC01C6612D800E40FBC /* CurrentLocationViewController.swift */,
 			);
 			name = TabControllers;
 			sourceTree = "<group>";
@@ -331,7 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				317330E41C5FCF2D00BB2148 /* AppDelegate.m in Sources */,
-				31380E8F1C616AAF0011F6EB /* LocationViewController.m in Sources */,
+				3180BCC11C6612D800E40FBC /* CurrentLocationViewController.swift in Sources */,
 				3180BCB01C64D65800E40FBC /* FridayExercise.m in Sources */,
 				31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */,
 				3180BC9F1C63AF5700E40FBC /* DetailsViewController.m in Sources */,
@@ -458,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -466,6 +467,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "emcako.Fitness-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fitness Guide/Fitness Guide-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -473,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -481,6 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "emcako.Fitness-Guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fitness Guide/Fitness Guide-Bridging-Header.h";
 			};
 			name = Release;
 		};
