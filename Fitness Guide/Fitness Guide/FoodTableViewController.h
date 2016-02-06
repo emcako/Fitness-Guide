@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FoodTableViewController : UITableViewController
+@interface FoodTableViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *foodTableView;
+
+@property(strong, nonatomic) NSString* titleStirng;
+
+@property(strong, nonatomic) NSString* className;
 
 @end

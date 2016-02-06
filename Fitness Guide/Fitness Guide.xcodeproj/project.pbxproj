@@ -42,6 +42,12 @@
 		3180BCBC1C65492800E40FBC /* ExerciseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCBB1C65492800E40FBC /* ExerciseCell.m */; };
 		3180BCC11C6612D800E40FBC /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCC01C6612D800E40FBC /* CurrentLocationViewController.swift */; };
 		3180BCC91C663C2B00E40FBC /* GaleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCC81C663C2B00E40FBC /* GaleryViewController.m */; };
+		3180BCCC1C666A7100E40FBC /* Breakfast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCCB1C666A7100E40FBC /* Breakfast.m */; };
+		3180BCCF1C666CFB00E40FBC /* Lunch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCCE1C666CFB00E40FBC /* Lunch.m */; };
+		3180BCD21C666D2A00E40FBC /* Dinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCD11C666D2A00E40FBC /* Dinner.m */; };
+		3180BCD51C66758900E40FBC /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCD41C66758900E40FBC /* FoodViewController.m */; };
+		3180BCD81C6687C900E40FBC /* AvoidFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCD71C6687C900E40FBC /* AvoidFood.m */; };
+		3180BCDC1C669E6000E40FBC /* FoodDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCDB1C669E6000E40FBC /* FoodDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +106,18 @@
 		3180BCC01C6612D800E40FBC /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		3180BCC71C663C2B00E40FBC /* GaleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaleryViewController.h; sourceTree = "<group>"; };
 		3180BCC81C663C2B00E40FBC /* GaleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaleryViewController.m; sourceTree = "<group>"; };
+		3180BCCA1C666A7100E40FBC /* Breakfast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Breakfast.h; sourceTree = "<group>"; };
+		3180BCCB1C666A7100E40FBC /* Breakfast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Breakfast.m; sourceTree = "<group>"; };
+		3180BCCD1C666CFB00E40FBC /* Lunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lunch.h; sourceTree = "<group>"; };
+		3180BCCE1C666CFB00E40FBC /* Lunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lunch.m; sourceTree = "<group>"; };
+		3180BCD01C666D2A00E40FBC /* Dinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dinner.h; sourceTree = "<group>"; };
+		3180BCD11C666D2A00E40FBC /* Dinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dinner.m; sourceTree = "<group>"; };
+		3180BCD31C66758900E40FBC /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		3180BCD41C66758900E40FBC /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		3180BCD61C6687C900E40FBC /* AvoidFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvoidFood.h; sourceTree = "<group>"; };
+		3180BCD71C6687C900E40FBC /* AvoidFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvoidFood.m; sourceTree = "<group>"; };
+		3180BCDA1C669E6000E40FBC /* FoodDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDetailsViewController.h; sourceTree = "<group>"; };
+		3180BCDB1C669E6000E40FBC /* FoodDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,12 +165,9 @@
 		31380E831C6167060011F6EB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3180BCD91C668CF100E40FBC /* FoodControllers */,
 				3180BCA01C64093600E40FBC /* TabControllers */,
 				3180BCA11C64096500E40FBC /* DayControllers */,
-				3180BC971C62A8FC00E40FBC /* AddExerciseViewController.h */,
-				3180BC981C62A8FC00E40FBC /* AddExerciseViewController.m */,
-				3180BC9D1C63AF5700E40FBC /* DetailsViewController.h */,
-				3180BC9E1C63AF5700E40FBC /* DetailsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -218,6 +233,14 @@
 				3180BCB21C64D68C00E40FBC /* SaturdayExercise.m */,
 				3180BCB41C64D6DA00E40FBC /* SundayExercise.h */,
 				3180BCB51C64D6DA00E40FBC /* SundayExercise.m */,
+				3180BCCA1C666A7100E40FBC /* Breakfast.h */,
+				3180BCCB1C666A7100E40FBC /* Breakfast.m */,
+				3180BCCD1C666CFB00E40FBC /* Lunch.h */,
+				3180BCCE1C666CFB00E40FBC /* Lunch.m */,
+				3180BCD01C666D2A00E40FBC /* Dinner.h */,
+				3180BCD11C666D2A00E40FBC /* Dinner.m */,
+				3180BCD61C6687C900E40FBC /* AvoidFood.h */,
+				3180BCD71C6687C900E40FBC /* AvoidFood.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -229,12 +252,12 @@
 				31380E851C61672C0011F6EB /* HomeViewController.m */,
 				31380E871C6167E70011F6EB /* DaysViewController.h */,
 				31380E881C6167E70011F6EB /* DaysViewController.m */,
-				31380E8A1C616A370011F6EB /* FoodTableViewController.h */,
-				31380E8B1C616A370011F6EB /* FoodTableViewController.m */,
 				3180BCBD1C65F27800E40FBC /* Fitness Guide-Bridging-Header.h */,
 				3180BCC01C6612D800E40FBC /* CurrentLocationViewController.swift */,
 				3180BCC71C663C2B00E40FBC /* GaleryViewController.h */,
 				3180BCC81C663C2B00E40FBC /* GaleryViewController.m */,
+				3180BCD31C66758900E40FBC /* FoodViewController.h */,
+				3180BCD41C66758900E40FBC /* FoodViewController.m */,
 			);
 			name = TabControllers;
 			sourceTree = "<group>";
@@ -242,6 +265,10 @@
 		3180BCA11C64096500E40FBC /* DayControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3180BC9D1C63AF5700E40FBC /* DetailsViewController.h */,
+				3180BC9E1C63AF5700E40FBC /* DetailsViewController.m */,
+				3180BC971C62A8FC00E40FBC /* AddExerciseViewController.h */,
+				3180BC981C62A8FC00E40FBC /* AddExerciseViewController.m */,
 				3180BC941C62A29900E40FBC /* MondayTableViewController.h */,
 				3180BC951C62A29900E40FBC /* MondayTableViewController.m */,
 			);
@@ -256,6 +283,17 @@
 				3180BCBB1C65492800E40FBC /* ExerciseCell.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		3180BCD91C668CF100E40FBC /* FoodControllers */ = {
+			isa = PBXGroup;
+			children = (
+				31380E8A1C616A370011F6EB /* FoodTableViewController.h */,
+				31380E8B1C616A370011F6EB /* FoodTableViewController.m */,
+				3180BCDA1C669E6000E40FBC /* FoodDetailsViewController.h */,
+				3180BCDB1C669E6000E40FBC /* FoodDetailsViewController.m */,
+			);
+			name = FoodControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,18 +369,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				317330E41C5FCF2D00BB2148 /* AppDelegate.m in Sources */,
+				3180BCD81C6687C900E40FBC /* AvoidFood.m in Sources */,
 				3180BCC11C6612D800E40FBC /* CurrentLocationViewController.swift in Sources */,
 				3180BCB01C64D65800E40FBC /* FridayExercise.m in Sources */,
+				3180BCCF1C666CFB00E40FBC /* Lunch.m in Sources */,
 				31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */,
+				3180BCDC1C669E6000E40FBC /* FoodDetailsViewController.m in Sources */,
 				3180BC9F1C63AF5700E40FBC /* DetailsViewController.m in Sources */,
 				3180BC9C1C634BDD00E40FBC /* MondayExercise.m in Sources */,
 				3180BCB31C64D68C00E40FBC /* SaturdayExercise.m in Sources */,
+				3180BCD51C66758900E40FBC /* FoodViewController.m in Sources */,
 				3180BC991C62A8FC00E40FBC /* AddExerciseViewController.m in Sources */,
 				3180BCA41C640ADF00E40FBC /* TuesdayExercise.m in Sources */,
+				3180BCCC1C666A7100E40FBC /* Breakfast.m in Sources */,
 				317330E11C5FCF2D00BB2148 /* main.m in Sources */,
 				3180BCC91C663C2B00E40FBC /* GaleryViewController.m in Sources */,
 				3180BCB61C64D6DA00E40FBC /* SundayExercise.m in Sources */,
 				3180BC931C62571700E40FBC /* Exercise.m in Sources */,
+				3180BCD21C666D2A00E40FBC /* Dinner.m in Sources */,
 				3180BCAA1C64A06F00E40FBC /* WednesdayExercise.m in Sources */,
 				3180BCBC1C65492800E40FBC /* ExerciseCell.m in Sources */,
 				31380E861C61672C0011F6EB /* HomeViewController.m in Sources */,

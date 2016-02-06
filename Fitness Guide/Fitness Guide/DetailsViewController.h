@@ -14,7 +14,6 @@
 @property (nonatomic, strong) Exercise* exercise;
 
 @property (weak, nonatomic) IBOutlet UILabel *muscleLabel;
-
 @property (weak, nonatomic) IBOutlet UILabel *exerciseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
