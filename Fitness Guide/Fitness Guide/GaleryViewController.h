@@ -10,5 +10,6 @@
 
 @interface GaleryViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

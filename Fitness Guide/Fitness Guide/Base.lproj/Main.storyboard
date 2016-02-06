@@ -38,9 +38,23 @@
                     <view key="view" contentMode="scaleToFill" id="83n-9Q-I8b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RyP-hU-pPK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RyP-hU-pPK" firstAttribute="bottom" secondItem="KHw-Gr-dhX" secondAttribute="top" id="BMa-yK-uk5"/>
+                            <constraint firstAttribute="trailing" secondItem="RyP-hU-pPK" secondAttribute="trailing" id="U1G-pI-2Ai"/>
+                            <constraint firstItem="RyP-hU-pPK" firstAttribute="top" secondItem="QPq-Th-Wkl" secondAttribute="bottom" id="lk4-UU-VRL"/>
+                            <constraint firstItem="RyP-hU-pPK" firstAttribute="leading" secondItem="83n-9Q-I8b" secondAttribute="leading" id="nDo-km-M5R"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4vn-59-MMa"/>
+                    <connections>
+                        <outlet property="imageView" destination="RyP-hU-pPK" id="8AL-eh-u07"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="En5-B5-kHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -386,11 +400,11 @@
             </objects>
             <point key="canvasLocation" x="-76" y="71.999999999999986"/>
         </scene>
-        <!--Galery-->
+        <!--Photos-->
         <scene sceneID="7Sh-2e-lsg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oiQ-pd-ytv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Galery" image="Picture" id="njf-1U-9f0"/>
+                    <tabBarItem key="tabBarItem" title="Photos" image="Picture" id="njf-1U-9f0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DF6-ca-3jb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
