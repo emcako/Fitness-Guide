@@ -19,7 +19,7 @@
     self.title = @"Details";
     self.muscleLabel.text = self.exercise.mainMuscle;
     self.exerciseLabel.text = self.exercise.subMuscle;
-    
+    self.deteilsDayViewImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.exercise.image]];
 }
 
 - (void)didReceiveMemoryWarning {

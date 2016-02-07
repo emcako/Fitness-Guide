@@ -17,4 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *exerciseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *deteilsDayViewImage;
+
 @end
