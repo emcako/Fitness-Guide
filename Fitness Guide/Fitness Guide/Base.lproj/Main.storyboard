@@ -17,7 +17,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="H0G-lz-pTW" kind="relationship" relationship="viewControllers" id="5UC-PR-i0Z"/>
+                        <segue destination="rcW-J5-X9K" kind="relationship" relationship="viewControllers" id="5UC-PR-i0Z"/>
                         <segue destination="kDk-TB-yzu" kind="relationship" relationship="viewControllers" id="3nT-9t-JSi"/>
                         <segue destination="QAp-oL-4JH" kind="relationship" relationship="viewControllers" id="AVn-Z1-cgC"/>
                         <segue destination="oiQ-pd-ytv" kind="relationship" relationship="viewControllers" id="Z3W-pr-uZY"/>
@@ -59,9 +59,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="En5-B5-kHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-214" y="-805"/>
+            <point key="canvasLocation" x="598" y="-805"/>
         </scene>
-        <!--Home-->
+        <!--Fitness Guide-->
         <scene sceneID="bbO-9P-Tti">
             <objects>
                 <viewController id="H0G-lz-pTW" customClass="HomeViewController" customModule="Fitness_Guide" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,20 +73,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtZ-ze-cfb">
-                                <rect key="frame" x="12" y="289" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sSK-Gv-EO8">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sSK-Gv-EO8" secondAttribute="trailing" id="ayc-Im-tZI"/>
+                            <constraint firstItem="sSK-Gv-EO8" firstAttribute="bottom" secondItem="uxc-jx-bfG" secondAttribute="top" id="d7i-gY-9UA"/>
+                            <constraint firstItem="sSK-Gv-EO8" firstAttribute="leading" secondItem="NYM-qd-Ym5" secondAttribute="leading" id="gOa-dx-2Om"/>
+                            <constraint firstItem="sSK-Gv-EO8" firstAttribute="top" secondItem="NYM-qd-Ym5" secondAttribute="top" constant="64" id="ifp-4g-g5H"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="0nO-gN-K9h"/>
+                    <navigationItem key="navigationItem" title="Fitness Guide" id="Oi4-Mt-hXI"/>
+                    <connections>
+                        <outlet property="homeImageView" destination="sSK-Gv-EO8" id="nXD-MW-lQ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYL-7X-AFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1583" y="-805"/>
+            <point key="canvasLocation" x="-771" y="-805"/>
         </scene>
         <!--Days View Controller-->
         <scene sceneID="haI-zH-WAs">
@@ -577,7 +583,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhD-qV-Kmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-895" y="-805"/>
+            <point key="canvasLocation" x="-83" y="-805"/>
         </scene>
         <!--Food-->
         <scene sceneID="VnM-0t-1Ec">
@@ -597,6 +603,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsR-sR-TaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-895" y="568"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="AmY-X0-daW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rcW-J5-X9K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="0nO-gN-K9h"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rIv-9b-lWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H0G-lz-pTW" kind="relationship" relationship="rootViewController" id="cFP-bo-iRh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2SX-Tx-s2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1583" y="-805"/>
         </scene>
     </scenes>
     <resources>

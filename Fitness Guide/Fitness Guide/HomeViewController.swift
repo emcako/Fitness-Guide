@@ -11,11 +11,15 @@ import UIKit
 class HomeViewController: UIViewController {
     
 
+    @IBOutlet weak var homeImageView: UIImageView!
+    
     var backgroundTaskIdentifier: UIBackgroundTaskIdentifier?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
+        homeImageView.image = UIImage(named: "homePic")
+        
         backgroundTaskIdentifier = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({
             UIApplication.sharedApplication().endBackgroundTask(self.backgroundTaskIdentifier!)
         })
