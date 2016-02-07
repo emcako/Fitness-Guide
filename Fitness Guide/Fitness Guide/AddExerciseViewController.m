@@ -100,7 +100,7 @@ static NSString* cellIdentifier = @"iden";
 }
 
 
-static int num = 1;
+static int num = 0;
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.currentExercise = [self.exercises objectAtIndex:indexPath.row];
@@ -168,36 +168,104 @@ static int num = 1;
 }
 
 
+static UIAlertView*  messageAlertSuccess;
+static UIAlertView*  messageAlertError;
 - (IBAction)addExercise:(id)sender {
     
+    //validation for adding in any day of week
+    messageAlertSuccess = [[UIAlertView alloc] initWithTitle:@"Added successfully" message:[NSString stringWithFormat:@"You added %@ exercise",
+                                                                                            self.currentExercise.subMuscle]
+                                                    delegate:nil
+                                           cancelButtonTitle:@"OK"
+                                           otherButtonTitles:nil];
+    
+    
+    
+    messageAlertError = [[UIAlertView alloc] initWithTitle:@"ERROR" message:@" The exercise is not added"
+                                                  delegate:nil
+                                         cancelButtonTitle:@"OK"
+                                         otherButtonTitles:nil];
+
+    
     if (num == 1) {
-        [self.monday saveInBackground];
+        [self.monday saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            if (succeeded) {
+               [messageAlertSuccess show];
+               num = 0;
+            } else {
+                [messageAlertError show];
+            }
+        }];
     } else if (num == 2){
-        [self.tuesday saveInBackground];
+        [self.tuesday saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            if (succeeded) {
+                [messageAlertSuccess show];
+                num = 0;
+            } else {
+                [messageAlertError show];
+            }
+
+        }];
     } else if (num == 3){
-        [self.wednesday saveInBackground];
+        [self.wednesday saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            if (succeeded) {
+                [messageAlertSuccess show];
+                num = 0;
+            } else {
+                [messageAlertError show];
+            }
+        }];
     } else if (num == 4){
-        [self.thursday saveInBackground];
+        [self.thursday saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            if (succeeded) {
+                [messageAlertSuccess show];
+                num = 0;
+            } else {
+                [messageAlertError show];
+            }
+        }];
     } else if (num == 5){
-        [self.friday saveInBackground];
+        [self.friday saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            if (succeeded) {
+                [messageAlertSuccess show];
+                num = 0;
+            } else {
+                [messageAlertError show];
+            }
+        }];
     } else if (num == 6){
-        [self.saturday saveInBackground];
+        [self.saturday saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            if (succeeded) {
+                [messageAlertSuccess show];
+                num = 0;
+            } else {
+                [messageAlertError show];
+            }
+        }];
     } else if (num == 7){
-        [self.sunday saveInBackground];
+        [self.sunday saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            if (succeeded) {
+                [messageAlertSuccess show];
+            } else {
+                [messageAlertError show];
+            }
+        }];
+    } else {
+        [messageAlertError show];
     }
     
-    
-    
-    UIAlertView *messageAlert = [[UIAlertView alloc] initWithTitle:@"Added successfully"
-                                message:[NSString stringWithFormat:@"You added %@ exercise",self.currentExercise.subMuscle]
-                                                          delegate:nil
-                                                 cancelButtonTitle:@"OK"
-                                                 otherButtonTitles:nil];
-                                 
-    
-    [messageAlert show];
     [self.navigationController popViewControllerAnimated:YES];
+    
+    
+    
+    
+    
+    
+  
+   
 }
+
+
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
