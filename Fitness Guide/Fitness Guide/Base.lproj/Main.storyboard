@@ -200,7 +200,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.65098039215686276" green="0.68627450980392157" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="t5D-h0-DJD" firstAttribute="top" secondItem="7hF-rd-5db" secondAttribute="bottom" constant="3" id="4BU-wu-Cme"/>
                             <constraint firstItem="IUs-JP-G5d" firstAttribute="leading" secondItem="lpC-4o-vuh" secondAttribute="leadingMargin" id="5o0-HX-Gcw"/>
@@ -238,7 +238,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VYH-xF-3dc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.82528741417826768" green="0.84342948717948718" blue="0.77524225456377016" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.32323773106749432" green="0.63532449224031629" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mxt-26-zfC">
@@ -341,17 +341,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyZ-9b-x0S">
-                                <rect key="frame" x="16" y="443" width="288" height="40"/>
-                                <color key="backgroundColor" red="0.7157088461537533" green="1" blue="0.3824722756752903" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyZ-9b-x0S">
+                                <rect key="frame" x="156" y="531" width="288" height="40"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="rkS-M2-g8W"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="ADD"/>
+                                <state key="normal" title="ADD">
+                                    <color key="titleColor" red="0.19215686274509805" green="0.50980392156862742" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addExercise:" destination="sSM-4T-XSL" eventType="touchUpInside" id="g6g-4c-j22"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ww-hV-Q6I">
-                                <rect key="frame" x="16" y="119" width="288" height="289"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ww-hV-Q6I">
+                                <rect key="frame" x="20" y="28" width="560" height="472"/>
                                 <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.32323773106749432" green="0.63532449224031629" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
@@ -361,7 +366,15 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.58431372549019611" green="0.62352941176470589" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Ww-hV-Q6I" firstAttribute="top" secondItem="B69-5r-EQq" secondAttribute="bottom" constant="8" symbolic="YES" id="7AP-kt-x5a"/>
+                            <constraint firstItem="vyZ-9b-x0S" firstAttribute="top" secondItem="5Ww-hV-Q6I" secondAttribute="bottom" constant="31" id="Ju1-Px-550"/>
+                            <constraint firstItem="vyZ-9b-x0S" firstAttribute="centerX" secondItem="5Ww-hV-Q6I" secondAttribute="centerX" id="PD9-DZ-iVg"/>
+                            <constraint firstItem="5Ww-hV-Q6I" firstAttribute="trailing" secondItem="6bh-U2-Fad" secondAttribute="trailingMargin" id="W3F-cE-oT5"/>
+                            <constraint firstItem="cmz-mw-tqC" firstAttribute="top" secondItem="vyZ-9b-x0S" secondAttribute="bottom" constant="29" id="X97-52-Jg1"/>
+                            <constraint firstItem="5Ww-hV-Q6I" firstAttribute="leading" secondItem="6bh-U2-Fad" secondAttribute="leadingMargin" id="zE0-GF-sEU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableViewAddExercise" destination="5Ww-hV-Q6I" id="lpL-Fb-LeG"/>
