@@ -19,7 +19,6 @@
 		313185E81C622CE7000034DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313185E71C622CE7000034DD /* SystemConfiguration.framework */; };
 		313185EA1C622CF0000034DD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 313185E91C622CF0000034DD /* libz.tbd */; };
 		313185EC1C622CFA000034DD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 313185EB1C622CFA000034DD /* libsqlite3.tbd */; };
-		31380E861C61672C0011F6EB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E851C61672C0011F6EB /* HomeViewController.m */; };
 		31380E891C6167E70011F6EB /* DaysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E881C6167E70011F6EB /* DaysViewController.m */; };
 		31380E8C1C616A370011F6EB /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380E8B1C616A370011F6EB /* FoodTableViewController.m */; };
 		317330E11C5FCF2D00BB2148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 317330E01C5FCF2D00BB2148 /* main.m */; };
@@ -48,6 +47,7 @@
 		3180BCD51C66758900E40FBC /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCD41C66758900E40FBC /* FoodViewController.m */; };
 		3180BCD81C6687C900E40FBC /* AvoidFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCD71C6687C900E40FBC /* AvoidFood.m */; };
 		3180BCDC1C669E6000E40FBC /* FoodDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCDB1C669E6000E40FBC /* FoodDetailsViewController.m */; };
+		3180BCE01C66C08D00E40FBC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180BCDF1C66C08D00E40FBC /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +63,6 @@
 		313185E71C622CE7000034DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		313185E91C622CF0000034DD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		313185EB1C622CFA000034DD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		31380E841C61672C0011F6EB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		31380E851C61672C0011F6EB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		31380E871C6167E70011F6EB /* DaysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaysViewController.h; sourceTree = "<group>"; };
 		31380E881C6167E70011F6EB /* DaysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaysViewController.m; sourceTree = "<group>"; };
 		31380E8A1C616A370011F6EB /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewController.h; sourceTree = "<group>"; };
@@ -118,6 +116,7 @@
 		3180BCD71C6687C900E40FBC /* AvoidFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvoidFood.m; sourceTree = "<group>"; };
 		3180BCDA1C669E6000E40FBC /* FoodDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDetailsViewController.h; sourceTree = "<group>"; };
 		3180BCDB1C669E6000E40FBC /* FoodDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDetailsViewController.m; sourceTree = "<group>"; };
+		3180BCDF1C66C08D00E40FBC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,8 +247,6 @@
 		3180BCA01C64093600E40FBC /* TabControllers */ = {
 			isa = PBXGroup;
 			children = (
-				31380E841C61672C0011F6EB /* HomeViewController.h */,
-				31380E851C61672C0011F6EB /* HomeViewController.m */,
 				31380E871C6167E70011F6EB /* DaysViewController.h */,
 				31380E881C6167E70011F6EB /* DaysViewController.m */,
 				3180BCBD1C65F27800E40FBC /* Fitness Guide-Bridging-Header.h */,
@@ -258,6 +255,7 @@
 				3180BCC81C663C2B00E40FBC /* GaleryViewController.m */,
 				3180BCD31C66758900E40FBC /* FoodViewController.h */,
 				3180BCD41C66758900E40FBC /* FoodViewController.m */,
+				3180BCDF1C66C08D00E40FBC /* HomeViewController.swift */,
 			);
 			name = TabControllers;
 			sourceTree = "<group>";
@@ -379,6 +377,7 @@
 				3180BC9C1C634BDD00E40FBC /* MondayExercise.m in Sources */,
 				3180BCB31C64D68C00E40FBC /* SaturdayExercise.m in Sources */,
 				3180BCD51C66758900E40FBC /* FoodViewController.m in Sources */,
+				3180BCE01C66C08D00E40FBC /* HomeViewController.swift in Sources */,
 				3180BC991C62A8FC00E40FBC /* AddExerciseViewController.m in Sources */,
 				3180BCA41C640ADF00E40FBC /* TuesdayExercise.m in Sources */,
 				3180BCCC1C666A7100E40FBC /* Breakfast.m in Sources */,
@@ -389,7 +388,6 @@
 				3180BCD21C666D2A00E40FBC /* Dinner.m in Sources */,
 				3180BCAA1C64A06F00E40FBC /* WednesdayExercise.m in Sources */,
 				3180BCBC1C65492800E40FBC /* ExerciseCell.m in Sources */,
-				31380E861C61672C0011F6EB /* HomeViewController.m in Sources */,
 				3180BCAD1C64D51F00E40FBC /* ThursdayExercise.m in Sources */,
 				3180BC961C62A29900E40FBC /* MondayTableViewController.m in Sources */,
 				31380E891C6167E70011F6EB /* DaysViewController.m in Sources */,

@@ -64,7 +64,7 @@
         <!--Home-->
         <scene sceneID="bbO-9P-Tti">
             <objects>
-                <viewController id="H0G-lz-pTW" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="H0G-lz-pTW" customClass="HomeViewController" customModule="Fitness_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ExI-ab-mNA"/>
                         <viewControllerLayoutGuide type="bottom" id="uxc-jx-bfG"/>

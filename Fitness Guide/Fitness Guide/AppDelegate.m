@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <AVFoundation/AVAudioPlayer.h>
+
 
 @interface AppDelegate ()
 
@@ -20,7 +22,41 @@
     
     [Parse setApplicationId:@"yyiYli6L5Kpr4DxaNdzBxX8sw4PzS28PMIOuaywU"
                   clientKey:@"3LbP5dTwALBb0xjlMlqXQ52VIUVHLZxNQGXfNvVS"];
+    
+    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:
+                                                   (UIUserNotificationTypeBadge
+                                                    |UIUserNotificationTypeSound
+                                                    |UIUserNotificationTypeAlert) categories:nil]];
+    
     return YES;
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    UIApplicationState state = [application applicationState];
+    
+    if (state == UIApplicationStateActive)
+    {
+        
+        NSLog(@"User Info : %@", [userInfo description]);
+        
+        NSLog(@"User Info Alert Message : %@", [[userInfo objectForKey:@"aps"] objectForKey:@"alert"]);
+        
+        NSString *messageString = [NSString stringWithFormat:@"%@", [[userInfo objectForKey:@"aps"] objectForKey:@"alert"]];
+        
+        NSString *playSoundOnAlert = [NSString stringWithFormat:@"%@", [[userInfo objectForKey:@"aps"] objectForKey:@"sound"]];
+        
+        NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@",[[NSBundle mainBundle] resourcePath],playSoundOnAlert]];
+        
+        NSError *error;
+        
+        AVAudioPlayer* audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+        audioPlayer.numberOfLoops = 0;
+        [audioPlayer play];
+        
+    }
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
