@@ -106,63 +106,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tI-8o-918">
-                                <rect key="frame" x="16" y="119" width="527" height="30"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tI-8o-918">
+                                <rect key="frame" x="20" y="72" width="560" height="60"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="L8D-2P-O2d"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="fbz-A2-5Ew"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="MONDAY"/>
                                 <connections>
                                     <action selector="goToMondayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="9Lh-Zj-F1d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRV-1C-6V7">
-                                <rect key="frame" x="142" y="167" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRV-1C-6V7">
+                                <rect key="frame" x="20" y="135" width="560" height="60"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="188-ML-ROY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="LQO-G3-ZLF"/>
+                                    <constraint firstAttribute="width" constant="560" id="jgR-mf-MSj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Tuesday"/>
                                 <connections>
                                     <action selector="goToTuesdayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="EKf-ra-2aR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGk-cy-HjL">
-                                <rect key="frame" x="142" y="216" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGk-cy-HjL">
+                                <rect key="frame" x="20" y="198" width="560" height="59"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="TpR-2u-fpM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="c6C-mb-jup"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Wednesday"/>
                                 <connections>
                                     <action selector="goToWednesdayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="oDU-fV-mtE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-nv-UIR">
-                                <rect key="frame" x="142" y="259" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-nv-UIR">
+                                <rect key="frame" x="20" y="260" width="560" height="61"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="5Ai-2O-xUI"/>
+                                    <constraint firstAttribute="height" constant="61" id="D9b-ft-doJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Thursday"/>
                                 <connections>
                                     <action selector="goToThursdayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="ZRg-T6-z9W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hF-rd-5db">
-                                <rect key="frame" x="156" y="308" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hF-rd-5db">
+                                <rect key="frame" x="20" y="324" width="560" height="61"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="FkH-Ve-FSs"/>
+                                    <constraint firstAttribute="height" constant="61" id="scM-Mo-qts"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Friday"/>
                                 <connections>
                                     <action selector="goToFridayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="nvQ-YT-t2R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5D-h0-DJD">
-                                <rect key="frame" x="142" y="367" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5D-h0-DJD">
+                                <rect key="frame" x="20" y="388" width="560" height="61"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="bHJ-lQ-8At"/>
+                                    <constraint firstAttribute="height" constant="61" id="eAQ-90-9XA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Saturday"/>
                                 <connections>
                                     <action selector="goToSaturdayTV:" destination="8ot-uf-8bS" eventType="touchUpInside" id="HU1-m5-brq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUs-JP-G5d">
-                                <rect key="frame" x="142" y="434" width="302" height="41"/>
-                                <color key="backgroundColor" red="0.10297669280000001" green="1" blue="0.025637675879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUs-JP-G5d">
+                                <rect key="frame" x="20" y="452" width="560" height="55"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="55" id="IJj-iX-aHH"/>
+                                    <constraint firstAttribute="height" constant="55" id="KhB-mh-CXO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="YRc-Y7-KGg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Sunday"/>
                                 <connections>
@@ -170,7 +200,30 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="t5D-h0-DJD" firstAttribute="top" secondItem="7hF-rd-5db" secondAttribute="bottom" constant="3" id="4BU-wu-Cme"/>
+                            <constraint firstItem="IUs-JP-G5d" firstAttribute="leading" secondItem="lpC-4o-vuh" secondAttribute="leadingMargin" id="5o0-HX-Gcw"/>
+                            <constraint firstItem="FGk-cy-HjL" firstAttribute="trailing" secondItem="lpC-4o-vuh" secondAttribute="trailingMargin" id="78E-b5-XUo"/>
+                            <constraint firstItem="9ql-nv-UIR" firstAttribute="top" secondItem="FGk-cy-HjL" secondAttribute="bottom" constant="3" id="AkN-MI-R6k"/>
+                            <constraint firstItem="9ql-nv-UIR" firstAttribute="trailing" secondItem="lpC-4o-vuh" secondAttribute="trailingMargin" id="BPe-1g-n4T"/>
+                            <constraint firstItem="7hF-rd-5db" firstAttribute="trailing" secondItem="lpC-4o-vuh" secondAttribute="trailingMargin" id="C22-up-wMd"/>
+                            <constraint firstItem="FGk-cy-HjL" firstAttribute="top" secondItem="IRV-1C-6V7" secondAttribute="bottom" constant="3" id="HY8-z1-GkO"/>
+                            <constraint firstItem="IUs-JP-G5d" firstAttribute="top" secondItem="t5D-h0-DJD" secondAttribute="bottom" constant="3" id="O3P-iC-xp4"/>
+                            <constraint firstItem="FGk-cy-HjL" firstAttribute="leading" secondItem="lpC-4o-vuh" secondAttribute="leadingMargin" id="XfF-41-Kxd"/>
+                            <constraint firstItem="7tI-8o-918" firstAttribute="leading" secondItem="lpC-4o-vuh" secondAttribute="leadingMargin" id="afh-fF-MfP"/>
+                            <constraint firstItem="IRV-1C-6V7" firstAttribute="leading" secondItem="lpC-4o-vuh" secondAttribute="leadingMargin" id="baA-Sd-cWS"/>
+                            <constraint firstItem="7tI-8o-918" firstAttribute="trailing" secondItem="lpC-4o-vuh" secondAttribute="trailingMargin" id="c21-ef-Ymf"/>
+                            <constraint firstItem="t5D-h0-DJD" firstAttribute="leading" secondItem="lpC-4o-vuh" secondAttribute="leadingMargin" id="eeS-fT-8Xl"/>
+                            <constraint firstItem="7hF-rd-5db" firstAttribute="leading" secondItem="lpC-4o-vuh" secondAttribute="leadingMargin" id="fk1-1o-NmZ"/>
+                            <constraint firstItem="t5D-h0-DJD" firstAttribute="trailing" secondItem="lpC-4o-vuh" secondAttribute="trailingMargin" id="gEk-yw-mWs"/>
+                            <constraint firstItem="7tI-8o-918" firstAttribute="top" secondItem="iDq-3j-1uD" secondAttribute="bottom" constant="8" symbolic="YES" id="gSh-yI-UNd"/>
+                            <constraint firstItem="7hF-rd-5db" firstAttribute="top" secondItem="9ql-nv-UIR" secondAttribute="bottom" constant="3" id="hf4-Kd-sIR"/>
+                            <constraint firstItem="IRV-1C-6V7" firstAttribute="trailing" secondItem="lpC-4o-vuh" secondAttribute="trailingMargin" id="iKw-2T-A2R"/>
+                            <constraint firstItem="IRV-1C-6V7" firstAttribute="top" secondItem="7tI-8o-918" secondAttribute="bottom" constant="3" id="jdl-bc-WLM"/>
+                            <constraint firstItem="9ql-nv-UIR" firstAttribute="leading" secondItem="lpC-4o-vuh" secondAttribute="leadingMargin" id="mtK-Tx-IXS"/>
+                            <constraint firstItem="IUs-JP-G5d" firstAttribute="trailing" secondItem="lpC-4o-vuh" secondAttribute="trailingMargin" id="wPU-Vx-6Pj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="shL-gU-4bJ"/>
                 </viewController>
