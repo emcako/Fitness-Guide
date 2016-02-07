@@ -47,7 +47,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
+  
+    
     
     
     self.title = @"Add Exercise";
@@ -67,7 +68,7 @@
         
     }];
     
-   
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -93,7 +94,7 @@ static NSString* cellIdentifier = @"iden";
     Exercise* exercise = [self.exercises objectAtIndex:indexPath.row];
     cell.mainMuscleLabel.text = exercise.mainMuscle;
     cell.subMuscleLabel.text = exercise.subMuscle;
-    cell.cellImageView.image = [UIImage imageNamed:@"Tricepss"];
+    cell.cellImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",exercise.image]];
     
     return cell;
 }
@@ -109,6 +110,7 @@ static int num = 1;
         self.monday = [MondayExercise object];
         self.monday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.monday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.monday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 1;
         
     } else if ([self.check  isEqual: @"Tuesday"]){
@@ -116,6 +118,7 @@ static int num = 1;
         self.tuesday = [TuesdayExercise object];
         self.tuesday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.tuesday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.tuesday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 2;
         
     } else if ([self.check  isEqual: @"Wednesday"]){
@@ -123,6 +126,7 @@ static int num = 1;
         self.wednesday = [WednesdayExercise object];
         self.wednesday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.wednesday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.wednesday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 3;
         
     } else if ([self.check  isEqual: @"Thursday"]){
@@ -130,6 +134,8 @@ static int num = 1;
         self.thursday = [ThursdayExercise object];
         self.thursday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.thursday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.thursday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
+        
         num = 4;
         
     } else if ([self.check  isEqual: @"Friday"]){
@@ -137,6 +143,7 @@ static int num = 1;
         self.friday = [FridayExercise object];
         self.friday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.friday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.friday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 5;
         
     } else if ([self.check  isEqual: @"Saturday"]){
@@ -144,6 +151,7 @@ static int num = 1;
         self.saturday = [SaturdayExercise object];
         self.saturday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.saturday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.saturday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 6;
         
     } else if ([self.check  isEqual: @"Sunday"]){
@@ -151,6 +159,7 @@ static int num = 1;
         self.sunday = [SundayExercise object];
         self.sunday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.sunday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.sunday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 7;
         
     }

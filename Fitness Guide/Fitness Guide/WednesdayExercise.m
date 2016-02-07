@@ -13,6 +13,7 @@
 @dynamic mainMuscle;
 @dynamic subMuscle;
 @dynamic explanation;
+@dynamic image;
 
 +(NSString *)parseClassName{
     return @"WednesdayExercise";

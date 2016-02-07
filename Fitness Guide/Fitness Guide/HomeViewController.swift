@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        homeImageView.image = UIImage(named: "homePic")
+        homeImageView.image = UIImage(named: "homePic3")
         
         backgroundTaskIdentifier = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({
             UIApplication.sharedApplication().endBackgroundTask(self.backgroundTaskIdentifier!)

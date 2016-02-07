@@ -14,5 +14,5 @@
 @property (strong, nonatomic) NSString* mainMuscle;
 @property (strong, nonatomic) NSString* subMuscle;
 @property (strong, nonatomic) NSString* explanation;
-
+@property (strong, nonatomic) NSString* image;
 @end

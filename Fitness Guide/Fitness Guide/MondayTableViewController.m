@@ -41,6 +41,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
     self.title = self.titleStirng;    // mqsto 1
     
     UIBarButtonItem *addBarButton =
@@ -66,8 +72,7 @@
         }
         
     }];
-
-    
+  
 }
 
 -(void) showAdd {
@@ -124,9 +129,7 @@ static NSString* cellIdentifier = @"iden";
     
     cell.mainMuscleLabel.text = exercise.mainMuscle;
     cell.subMuscleLabel.text = exercise.subMuscle;
-    cell.cellImageView.image = [UIImage imageNamed:@"Tricepss"];// [NSString stringWithFirmat:@"%@%@", exercise.mainMuscle, exercise.subMuscle] ili
-                                                            // vseki exercise da pazi image kato string i tuka da se podava samo exercise.image
-                                                            // i v bazata da otiva an string samo edin string v bazata i tva e      ^
+    cell.cellImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",exercise.image]];
     return cell;
     
     
