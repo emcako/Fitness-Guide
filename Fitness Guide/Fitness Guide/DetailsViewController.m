@@ -25,10 +25,21 @@
     [self.myTextView addGestureRecognizer:pinchOnTextfield];
 
     
-    
+    UITapGestureRecognizer* doubleTapp = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nanana:)];
+    doubleTapp.numberOfTapsRequired = 2;
+    [self.myTextView addGestureRecognizer:doubleTapp];
 }
 
-
+- (void)nanana:(UIPinchGestureRecognizer *)tapGesture{
+    
+    
+    if (tapGesture.state == UIGestureRecognizerStateEnded
+        || tapGesture.state == UIGestureRecognizerStateChanged) {
+        
+        self.myTextView.font = [UIFont fontWithName:self.myTextView.font.fontName size:15.0];
+    }
+    
+}
 
 - (void)handleTextFieldFont:(UIPinchGestureRecognizer *)pinchGestRecognizer{
     

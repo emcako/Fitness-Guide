@@ -301,6 +301,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="gnx-wy-1Ov" appends="YES" id="sJD-bo-3Y8"/>
+                                    <outletCollection property="gestureRecognizers" destination="GKr-qv-jk7" appends="YES" id="6ov-OK-9jC"/>
                                 </connections>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9De-en-xTt">
@@ -352,6 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmL-le-iHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pinchGestureRecognizer id="gnx-wy-1Ov"/>
+                <tapGestureRecognizer id="GKr-qv-jk7"/>
             </objects>
             <point key="canvasLocation" x="1027" y="-153"/>
         </scene>
@@ -587,6 +589,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="rZb-EM-Bwd" appends="YES" id="l0K-uU-0eg"/>
+                                    <outletCollection property="gestureRecognizers" destination="N8j-hL-PJC" appends="YES" id="ggr-s0-w48"/>
                                 </connections>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEU-0A-Gec">
@@ -644,6 +647,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zpm-Wm-2KQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pinchGestureRecognizer id="rZb-EM-Bwd"/>
                 <pinchGestureRecognizer id="X30-Vq-17W"/>
+                <tapGestureRecognizer id="N8j-hL-PJC"/>
             </objects>
             <point key="canvasLocation" x="1027" y="568"/>
         </scene>

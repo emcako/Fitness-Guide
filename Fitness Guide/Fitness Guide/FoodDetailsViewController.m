@@ -29,8 +29,26 @@
     UIPinchGestureRecognizer *pinchOnTextfield = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinch:)];
     [self.myTextField addGestureRecognizer:pinchOnTextfield];
     
+
+    UITapGestureRecognizer* doubleTapp = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(nanana:)];
+    doubleTapp.numberOfTapsRequired = 2;
+    [self.myTextField addGestureRecognizer:doubleTapp];
     
     }
+
+
+
+- (void)nanana:(UIPinchGestureRecognizer *)tapGesture{
+    
+    
+    if (tapGesture.state == UIGestureRecognizerStateEnded
+        || tapGesture.state == UIGestureRecognizerStateChanged) {
+       
+        self.myTextField.font = [UIFont fontWithName:self.myTextField.font.fontName size:15.0];
+    }
+    
+}
+
 
 
 
