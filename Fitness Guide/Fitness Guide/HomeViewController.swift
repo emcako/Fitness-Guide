@@ -28,8 +28,6 @@ class HomeViewController: UIViewController {
     }
 
     
-    
-    
     func Notification(){
         
         let Notification = UILocalNotification()
@@ -40,9 +38,6 @@ class HomeViewController: UIViewController {
         UIApplication.sharedApplication().scheduleLocalNotification(Notification)
     }
 
-    
-    
-    
     
     
     override func didReceiveMemoryWarning() {

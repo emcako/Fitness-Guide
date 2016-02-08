@@ -45,12 +45,6 @@
     
     
     self.navigationItem.leftBarButtonItem = addBarPhotos;
-//
-//    
-//    UIImagePickerController* picker = [[UIImagePickerController alloc] init];
-//    picker.delegate = self;
-//    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-//    [self presentViewController:picker animated:NO completion:nil];
 }
 
 

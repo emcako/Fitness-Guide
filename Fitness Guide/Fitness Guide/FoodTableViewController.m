@@ -36,9 +36,9 @@
     
    self.title = self.titleStirng;
     
-    PFQuery* query = [PFQuery queryWithClassName:self.className]; // 2-ro mqsto(ili strinFormat)
+    PFQuery* query = [PFQuery queryWithClassName:self.className]; 
     
-    //    [query whereKey:@"name" equalTo:@"doncho"];
+    
     
     __weak id weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){

@@ -52,11 +52,10 @@
     
     
     self.title = @"Add Exercise";
-    // tuka se vadqt i dobavqt obektite v parse
     
     PFQuery* query = [PFQuery queryWithClassName:[Exercise parseClassName]];
     
-//    [query whereKey:@"name" equalTo:@"doncho"];
+
     
     __weak id weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
@@ -262,13 +261,7 @@ static UIAlertView*  messageAlertError;
     }
     
     [self.navigationController popViewControllerAnimated:YES];
-    
-    
-    
-    
-    
-    
-  
+     
    
 }
 

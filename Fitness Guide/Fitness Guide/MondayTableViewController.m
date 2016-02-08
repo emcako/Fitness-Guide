@@ -42,11 +42,11 @@
     [super viewDidLoad];
     
         
-    // Do any additional setup after loading the view, typically from a nib.
     
     
     
-    self.title = self.titleStirng;    // mqsto 1
+    
+    self.title = self.titleStirng;
     
     UIBarButtonItem *addBarButton =
     [[UIBarButtonItem alloc]
@@ -55,12 +55,11 @@
      action:@selector(showAdd)];
     
     self.navigationItem.rightBarButtonItem = addBarButton;
-    // tuka s PF object kato v add-Exercise trqbva da se izvika masiva ot bazata i da drapna datasoursa
     
     
-    PFQuery* query = [PFQuery queryWithClassName:self.className]; // 2-ro mqsto(ili strinFormat)
+    PFQuery* query = [PFQuery queryWithClassName:self.className];
     
-    //    [query whereKey:@"name" equalTo:@"doncho"];
+    
     
     __weak id weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
@@ -86,7 +85,7 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    PFQuery* query = [PFQuery queryWithClassName:self.className];// 3-to mqsto (string format)
+    PFQuery* query = [PFQuery queryWithClassName:self.className];
     
 
     __weak id weakSelf = self;
@@ -189,9 +188,9 @@ static NSString* cellIdentifier = @"iden";
         }
     
         
-       //za vaseki den
+       
  
-        PFQuery* query = [PFQuery queryWithClassName:self.className];// i tuk 4-to (stringFormat)
+        PFQuery* query = [PFQuery queryWithClassName:self.className];
         
         __weak id weakSelf = self;
         [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error){
