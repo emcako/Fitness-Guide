@@ -19,5 +19,6 @@
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *deteilsDayViewImage;
+@property (weak, nonatomic) IBOutlet UITextView *myTextView;
 
 @end

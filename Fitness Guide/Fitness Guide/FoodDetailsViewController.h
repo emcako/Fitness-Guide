@@ -20,4 +20,9 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *foodDetailImageView;
 
+
+@property (weak, nonatomic) IBOutlet UITextView *myTextField;
+
+
+
 @end

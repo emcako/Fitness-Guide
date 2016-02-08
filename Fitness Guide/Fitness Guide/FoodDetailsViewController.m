@@ -23,16 +23,40 @@
     
     self.foodDetailImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.food.picture]];
     
+    
+    
+    
+    UIPinchGestureRecognizer *pinchOnTextfield = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinch:)];
+    [self.myTextField addGestureRecognizer:pinchOnTextfield];
+    
+    
     }
 
 
 
-
-
-
-
-
-
+- (void)pinch:(UIPinchGestureRecognizer *)pinchGestRecognizer{
+    
+    
+    if (pinchGestRecognizer.state == UIGestureRecognizerStateEnded
+        || pinchGestRecognizer.state == UIGestureRecognizerStateChanged) {
+        
+        CGFloat currentFontSize = self.myTextField.font.pointSize;
+        CGFloat newScale = currentFontSize * pinchGestRecognizer.scale;
+        
+        
+        if (newScale < 15.0) {
+            newScale = 15.0;
+        }
+        if (newScale > 60.0) {
+            newScale = 60.0;
+        }
+        
+        self.myTextField.font = [UIFont fontWithName:self.myTextField.font.fontName size:newScale];
+        pinchGestRecognizer.scale = 1;
+        
+    }
+    
+}
 
 
 
