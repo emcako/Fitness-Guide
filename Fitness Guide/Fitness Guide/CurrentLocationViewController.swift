@@ -25,7 +25,47 @@ class CurrentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
         self.locationManager.startUpdatingLocation()
         self.mapsView.showsUserLocation = true
         self.mapsView.showsCompass = true
+        
+        let uilgr = UILongPressGestureRecognizer(target: self, action: "addAnnotation:")
+        uilgr.minimumPressDuration = 1.0
+        
+        self.mapsView.addGestureRecognizer(uilgr)
+        
+           }
+    
+    func addAnnotation(gestureRecognizer:UIGestureRecognizer){
+        if gestureRecognizer.state == UIGestureRecognizerState.Began {
+            let touchPoint = gestureRecognizer.locationInView(mapsView)
+            let newCoordinates = mapsView.convertPoint(touchPoint, toCoordinateFromView: mapsView)
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = newCoordinates
+            
+            CLGeocoder().reverseGeocodeLocation(CLLocation(latitude: newCoordinates.latitude, longitude: newCoordinates.longitude), completionHandler: {(placemarks, error) -> Void in
+                if error != nil {
+                    print("Reverse geocoder failed with error" + error!.localizedDescription)
+                    return
+                }
+                
+                if placemarks!.count > 0 {
+                    let pm = placemarks![0] 
+                    
+                    
+                    annotation.title = pm.thoroughfare! + ", " + pm.subThoroughfare!
+                    annotation.subtitle = pm.subLocality
+                    self.mapsView.addAnnotation(annotation)
+                    print(pm)
+                }
+                else {
+                    annotation.title = "Unknown Place"
+                    self.mapsView.addAnnotation(annotation)
+                    print("Problem with the data received from geocoder")
+                }
+            })
+        }
     }
+    
+    
+    
     
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -34,6 +74,7 @@ class CurrentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
         let region = MKCoordinateRegion(center: center, span:MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002))
         self.mapsView.setRegion(region, animated: true)
         self.locationManager.stopUpdatingLocation()
+        
         
     }
     override func didReceiveMemoryWarning() {
