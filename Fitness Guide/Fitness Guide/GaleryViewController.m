@@ -72,12 +72,15 @@
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
-    UIImage* image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    self.imageView.image = image;
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+   
+    
+        UIImage *image = info[UIImagePickerControllerOriginalImage];
+        self.imageView.image = image;
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+     [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
-
-
 
 
 -(void)showPhotos{
