@@ -19,7 +19,12 @@
     self.title = @"Details";
     self.muscleLabel.text = self.exercise.mainMuscle;
     self.exerciseLabel.text = self.exercise.subMuscle;
+    self.myTextView.text = self.exercise.explanation;
     self.deteilsDayViewImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.exercise.image]];
+    
+    
+    
+    
     
     UIPinchGestureRecognizer *pinchOnTextfield = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handleTextFieldFont:)];
     [self.myTextView addGestureRecognizer:pinchOnTextfield];

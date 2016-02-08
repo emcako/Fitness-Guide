@@ -18,7 +18,8 @@
     [super viewDidLoad];
     
     self.title = @"Details";
-    self.foodDetailName.text = self.food.firstFood; // tuka trqbva da e NAME
+    self.foodDetailName.text = self.food.firstFood;
+    self.myTextField.text = self.food.explanation;
     self.foodDetailProducts.text = [NSString stringWithFormat:@" %@, %@, %@ ",self.food.firstFood, self.food.secondFood, self.food.thirdFood];
     
     self.foodDetailImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", self.food.picture]];

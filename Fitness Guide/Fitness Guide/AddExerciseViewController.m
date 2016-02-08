@@ -110,6 +110,7 @@ static int num = 0;
         self.monday = [MondayExercise object];
         self.monday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.monday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.monday.explanation = [NSString stringWithFormat:@"%@", self.currentExercise.explanation];
         self.monday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 1;
         
@@ -118,6 +119,7 @@ static int num = 0;
         self.tuesday = [TuesdayExercise object];
         self.tuesday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.tuesday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.tuesday.explanation = [NSString stringWithFormat:@"%@", self.currentExercise.explanation];
         self.tuesday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 2;
         
@@ -126,6 +128,7 @@ static int num = 0;
         self.wednesday = [WednesdayExercise object];
         self.wednesday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.wednesday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.wednesday.explanation = [NSString stringWithFormat:@"%@", self.currentExercise.explanation];
         self.wednesday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 3;
         
@@ -134,6 +137,7 @@ static int num = 0;
         self.thursday = [ThursdayExercise object];
         self.thursday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.thursday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.thursday.explanation = [NSString stringWithFormat:@"%@", self.currentExercise.explanation];
         self.thursday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         
         num = 4;
@@ -143,6 +147,7 @@ static int num = 0;
         self.friday = [FridayExercise object];
         self.friday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.friday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.friday.explanation = [NSString stringWithFormat:@"%@", self.currentExercise.explanation];
         self.friday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 5;
         
@@ -151,6 +156,7 @@ static int num = 0;
         self.saturday = [SaturdayExercise object];
         self.saturday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.saturday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.saturday.explanation = [NSString stringWithFormat:@"%@", self.currentExercise.explanation];
         self.saturday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 6;
         
@@ -159,6 +165,7 @@ static int num = 0;
         self.sunday = [SundayExercise object];
         self.sunday.mainMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.mainMuscle];
         self.sunday.subMuscle = [NSString stringWithFormat:@"%@", self.currentExercise.subMuscle];
+        self.sunday.explanation = [NSString stringWithFormat:@"%@", self.currentExercise.explanation];
         self.sunday.image = [NSString stringWithFormat:@"%@",self.currentExercise.image];
         num = 7;
         

@@ -71,12 +71,11 @@ static NSString* cellIdentifier = @"iden";
         
     }
     
-    Breakfast* food = [self.currentFoods objectAtIndex:indexPath.row]; // koito e reda taq e hranata
+    Breakfast* food = [self.currentFoods objectAtIndex:indexPath.row];
     
-    cell.mainMuscleLabel.text = food.firstFood;   // a tuka trqbva da e name s koito se oboznachava qstieto
+    cell.mainMuscleLabel.text = food.firstFood;
     cell.subMuscleLabel.text = [NSString stringWithFormat:@"%@, %@",food.secondFood, food.thirdFood];
-    cell.cellImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", food.picture]]; // food.picture ( samo stringa deto e tricepss)
-    
+    cell.cellImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", food.picture]];
     return cell;
     
     
