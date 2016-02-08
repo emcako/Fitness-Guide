@@ -31,11 +31,12 @@
                         <color key="textColor" red="0.01965411093736141" green="0.020960437367422056" blue="0.023042750754147856" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AyI-I5-zn7">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AyI-I5-zn7">
                         <rect key="frame" x="8" y="10" width="123" height="81"/>
                         <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="81" id="WKD-Wh-J1N"/>
+                            <constraint firstAttribute="height" constant="85" id="WKD-Wh-J1N"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123" id="lIQ-0a-UAe"/>
                             <constraint firstAttribute="width" constant="123" id="rMY-mX-kro"/>
                         </constraints>
                     </imageView>
@@ -44,7 +45,7 @@
                     <constraint firstItem="ooL-gb-zsS" firstAttribute="trailing" secondItem="9Ln-es-Uv8" secondAttribute="trailingMargin" id="58F-UW-UHN"/>
                     <constraint firstItem="AyI-I5-zn7" firstAttribute="leading" secondItem="9Ln-es-Uv8" secondAttribute="leadingMargin" id="QXP-hT-9A9"/>
                     <constraint firstItem="f7O-cc-9ty" firstAttribute="trailing" secondItem="ooL-gb-zsS" secondAttribute="trailing" id="Tq3-0o-70q"/>
-                    <constraint firstItem="AyI-I5-zn7" firstAttribute="top" secondItem="9Ln-es-Uv8" secondAttribute="topMargin" constant="2" id="Z3p-Xu-Eyg"/>
+                    <constraint firstItem="AyI-I5-zn7" firstAttribute="top" secondItem="9Ln-es-Uv8" secondAttribute="topMargin" id="Z3p-Xu-Eyg"/>
                     <constraint firstItem="f7O-cc-9ty" firstAttribute="leading" secondItem="ooL-gb-zsS" secondAttribute="leading" id="cJ3-s3-AHi"/>
                     <constraint firstItem="ooL-gb-zsS" firstAttribute="top" secondItem="f7O-cc-9ty" secondAttribute="bottom" constant="8" symbolic="YES" id="h3X-nO-Sxz"/>
                     <constraint firstItem="f7O-cc-9ty" firstAttribute="leading" secondItem="AyI-I5-zn7" secondAttribute="trailing" constant="8" symbolic="YES" id="qqN-ij-thr"/>

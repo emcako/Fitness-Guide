@@ -12,6 +12,7 @@
 #import "Dinner.h"
 #import "AvoidFood.h"
 #import "FoodDetailsViewController.h"
+#import "ExerciseCell.h"
 
 @interface FoodTableViewController ()
 @property (nonatomic, strong) NSMutableArray* currentFoods;
@@ -62,19 +63,19 @@
 static NSString* cellIdentifier = @"iden";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    ExerciseCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (!cell) {
      
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+         cell = [[[NSBundle mainBundle] loadNibNamed:@"ExerciseCell" owner:self options:nil] objectAtIndex:0];
         
     }
     
     Breakfast* food = [self.currentFoods objectAtIndex:indexPath.row]; // koito e reda taq e hranata
     
-    cell.textLabel.text = food.firstFood;   // a tuka trqbva da e name s koito se oboznachava qstieto
-    
-    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", food.picture]]; // food.picture ( samo stringa deto e tricepss)
+    cell.mainMuscleLabel.text = food.firstFood;   // a tuka trqbva da e name s koito se oboznachava qstieto
+    cell.subMuscleLabel.text = [NSString stringWithFormat:@"%@, %@",food.secondFood, food.thirdFood];
+    cell.cellImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", food.picture]]; // food.picture ( samo stringa deto e tricepss)
     
     return cell;
     
@@ -104,11 +105,6 @@ static NSString* cellIdentifier = @"iden";
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
 }
-
-
-
-
-
 
 
 - (void)didReceiveMemoryWarning {

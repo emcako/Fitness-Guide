@@ -17,6 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *foodDetailProducts;
 
+
 @property (weak, nonatomic) IBOutlet UIImageView *foodDetailImageView;
 
 @end
